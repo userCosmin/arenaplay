@@ -1,19 +1,29 @@
 import { Link } from 'react-router-dom';
 import { cn } from '@/utils/cn';
 
-export function Logo({ dark = false, className }: { dark?: boolean; className?: string }) {
+interface LogoProps {
+  /** Kept for API compatibility with callers rendering the logo over dark backgrounds. */
+  dark?: boolean;
+  className?: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const sizeClasses: Record<NonNullable<LogoProps['size']>, string> = {
+  sm: 'h-8 sm:h-9',
+  md: 'h-9 sm:h-10',
+  lg: 'h-11 sm:h-14',
+};
+
+export function Logo({ className, size = 'md' }: LogoProps) {
   return (
-    <Link to="/" className={cn('flex items-center gap-2 font-display font-extrabold text-xl sm:text-2xl', className)} aria-label="Arena Play - acasă">
-      <span
-        className={cn(
-          'flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-playground text-white'
-        )}
-      >
-        AP
-      </span>
-      <span className={dark ? 'text-white' : 'text-ink-900'}>
-        Arena<span className="text-brand-500">Play</span>
-      </span>
+    <Link to="/" className={cn('flex items-center', className)} aria-label="Arena Play - acasă">
+      <img
+        src="/images/brand/logo.webp"
+        alt="Arena Play"
+        width={700}
+        height={415}
+        className={cn('w-auto', sizeClasses[size])}
+      />
     </Link>
   );
 }
