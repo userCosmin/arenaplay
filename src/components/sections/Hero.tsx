@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { CursorGlow } from '@/components/effects/CursorGlow';
 
 export function Hero() {
   return (
@@ -11,6 +12,7 @@ export function Hero() {
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-ink-950/40" aria-hidden="true" />
+      <CursorGlow color="#FF2E93" />
 
       <Container className="relative z-10">
         <motion.div

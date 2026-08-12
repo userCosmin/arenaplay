@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import type { BreadcrumbEntry } from '@/types';
 import { cn } from '@/utils/cn';
+import { CursorGlow } from '@/components/effects/CursorGlow';
 
 type Accent = 'petreceri' | 'playground' | 'afterschool' | 'arenamobila';
 
@@ -15,6 +16,13 @@ const accentGradients: Record<Accent, string> = {
 };
 
 const lightText: Accent[] = ['afterschool'];
+
+const accentHex: Record<Accent, string> = {
+  petreceri: '#FF2E93',
+  playground: '#0057FF',
+  afterschool: '#2CA0FF',
+  arenamobila: '#00C2B2',
+};
 
 interface PageHeroProps {
   eyebrow?: string;
@@ -30,6 +38,7 @@ export function PageHero({ eyebrow, title, subtitle, accent, breadcrumbs, childr
 
   return (
     <section className={cn('relative overflow-hidden bg-gradient-to-br pb-16 pt-32 sm:pb-20 sm:pt-40', accentGradients[accent])}>
+      <CursorGlow color={accentHex[accent]} />
       <Container className="relative z-10">
         <Breadcrumbs
           items={breadcrumbs}
