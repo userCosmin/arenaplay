@@ -26,8 +26,8 @@ export function Hero() {
             DISTRACȚIE. EXPERIENȚE. EDUCAȚIE.
           </h1>
           <p className="mt-6 text-balance text-lg sm:text-xl font-medium text-white/85">
-            Petreceri <span aria-hidden="true">•</span> Playground <span aria-hidden="true">•</span> Afterschool{' '}
-            <span aria-hidden="true">•</span> Arena Mobilă
+            Petreceri <span aria-hidden="true">•</span> Loc de joacă <span aria-hidden="true">•</span> Afterschool{' '}
+            <span aria-hidden="true">•</span> Arena XR
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button size="lg" to="/rezerva/" icon={<ArrowRight className="h-5 w-5" />}>

@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/Button';
 
 const ctas = [
   { label: 'Rezervă petrecere', href: '/petreceri-copii/pachete/', icon: PartyPopper, accent: 'petreceri' as const },
-  { label: 'Rezervă Playground', href: '/playground/tarife-program/', icon: Gamepad2, accent: 'playground' as const },
+  { label: 'Rezervă Loc de joacă', href: '/loc-de-joaca/tarife-program/', icon: Gamepad2, accent: 'playground' as const },
   { label: 'Solicită informații Afterschool', href: '/afterschool/inscrieri/', icon: GraduationCap, accent: 'afterschool' as const },
-  { label: 'Solicită Arena Mobilă', href: '/arena-mobila/solicita-oferta/', icon: Truck, accent: 'arenamobila' as const },
+  { label: 'Solicită Arena XR', href: '/arena-xr/solicita-oferta/', icon: Truck, accent: 'arenamobila' as const },
 ];
 
 /** Homepage closing section — four distinct, service-specific CTAs. */

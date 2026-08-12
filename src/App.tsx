@@ -55,19 +55,19 @@ export default function App() {
           <Route path="/petreceri-copii/" element={<PetreceriPage />} />
           <Route path="/petreceri-copii/pachete/" element={<PetreceriPachetePage />} />
 
-          <Route path="/playground/" element={<PlaygroundPage />} />
-          <Route path="/playground/activitati/" element={<PlaygroundActivitatiPage />} />
-          <Route path="/playground/tarife-program/" element={<PlaygroundTarifeProgramPage />} />
+          <Route path="/loc-de-joaca/" element={<PlaygroundPage />} />
+          <Route path="/loc-de-joaca/activitati/" element={<PlaygroundActivitatiPage />} />
+          <Route path="/loc-de-joaca/tarife-program/" element={<PlaygroundTarifeProgramPage />} />
 
           <Route path="/afterschool/" element={<AfterschoolPage />} />
           <Route path="/afterschool/program/" element={<AfterschoolProgramPage />} />
           <Route path="/afterschool/inscrieri/" element={<AfterschoolInscrieriPage />} />
 
-          <Route path="/arena-mobila/" element={<ArenaMobilaPage />} />
-          <Route path="/arena-mobila/scoli/" element={<ArenaMobilaScoliPage />} />
-          <Route path="/arena-mobila/evenimente/" element={<ArenaMobilaEvenimentePage />} />
-          <Route path="/arena-mobila/petreceri-private/" element={<ArenaMobilaPetreceriPrivatePage />} />
-          <Route path="/arena-mobila/solicita-oferta/" element={<ArenaMobilaSolicitaOfertaPage />} />
+          <Route path="/arena-xr/" element={<ArenaMobilaPage />} />
+          <Route path="/arena-xr/scoli/" element={<ArenaMobilaScoliPage />} />
+          <Route path="/arena-xr/evenimente/" element={<ArenaMobilaEvenimentePage />} />
+          <Route path="/arena-xr/petreceri-private/" element={<ArenaMobilaPetreceriPrivatePage />} />
+          <Route path="/arena-xr/solicita-oferta/" element={<ArenaMobilaSolicitaOfertaPage />} />
 
           <Route path="/despre-noi/" element={<DespreNoiPage />} />
           <Route path="/contact/" element={<ContactPage />} />

@@ -14,8 +14,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Arena Play — Petreceri, Playground, Afterschool & Arena Mobilă"
-        description="Distracție, experiențe și educație într-un singur loc: petreceri pentru copii, playground cu XR/VR, afterschool și Arena Mobilă adusă la tine."
+        title="Arena Play — Petreceri, Loc de joacă, Afterschool & Arena XR"
+        description="Distracție, experiențe și educație într-un singur loc: petreceri pentru copii, loc de joacă cu XR/VR, afterschool și Arena XR adusă la tine."
         path="/"
       />
       <JsonLd data={[localBusinessSchema(), organizationSchema()]} />

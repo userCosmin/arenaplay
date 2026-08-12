@@ -20,7 +20,7 @@ export const siteConfig = {
     legalName: 'Arena Play SRL',
     tagline: 'Distracție. Experiențe. Educație.',
     description:
-      'Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, playground cu tehnologie XR/VR, afterschool și Arena Mobilă — experiența Arena Play adusă la tine.',
+      'Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena XR — experiența Arena Play adusă la tine.',
     foundingYear: '2021',
   },
 
@@ -30,36 +30,47 @@ export const siteConfig = {
   },
 
   contact: {
-    phoneDisplay: '+40 7XX XXX XXX',
-    phoneE164: '+407XXXXXXXX',
-    whatsappNumber: '407XXXXXXXX',
+    phoneDisplay: '0768 491 858',
+    phoneE164: '+40768491858',
+    whatsappNumber: '40768491858',
     whatsappDefaultMessage: 'Bună! Aș vrea informații despre Arena Play.',
     email: 'contact@arenaplay.ro',
     reservationsEmail: 'rezervari@arenaplay.ro',
   },
 
   address: {
-    streetAddress: 'Str. Exemplu nr. 10',
-    locality: 'București',
-    region: 'București',
-    postalCode: '0X0000',
+    streetAddress: 'Str. Tudor Vladimirescu nr. 50A',
+    locality: 'Alba Iulia',
+    region: 'Alba',
+    postalCode: '510167',
     country: 'RO',
     countryName: 'România',
-    full: 'Str. Exemplu nr. 10, Sector 1, București, România',
-    googleMapsUrl: 'https://maps.google.com/?q=Arena+Play+Bucuresti',
+    full: 'Str. Tudor Vladimirescu nr. 50A, Alba Iulia, 510167, România',
+    googleMapsUrl:
+      'https://www.google.com/maps/search/?api=1&query=Str.+Tudor+Vladimirescu+50A%2C+Alba+Iulia%2C+510167%2C+Rom%C3%A2nia',
     googleMapsEmbedSrc:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.9!2d26.0!3d44.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDI3JzAwLjAiTiAyNsKwMDAnMDAuMCJF!5e0!3m2!1sro!2sro!4v0000000000000',
+      'https://www.google.com/maps?q=Str.+Tudor+Vladimirescu+50A%2C+Alba+Iulia%2C+510167%2C+Rom%C3%A2nia&output=embed',
+    // Approximate Alba Iulia city-centre coordinates — refine with the exact
+    // pin once the location is verified on Google Maps.
     geo: {
-      latitude: 44.4268,
-      longitude: 26.1025,
+      latitude: 46.0697,
+      longitude: 23.5701,
     },
   },
 
   social: {
-    facebook: 'https://facebook.com/arenaplay',
-    instagram: 'https://instagram.com/arenaplay',
-    tiktok: 'https://tiktok.com/@arenaplay',
-    youtube: 'https://youtube.com/@arenaplay',
+    facebook: 'https://www.facebook.com/arenaplay.albaiulia',
+    instagram: 'https://www.instagram.com/arenaplayclubalbaiulia/',
+    // No confirmed TikTok account yet — leave empty until one exists (kept out of JSON-LD automatically).
+    tiktok: '',
+    // No dedicated channel yet — links to a single video for now.
+    youtube: 'https://www.youtube.com/watch?v=GFfsPwgtXfo',
+  },
+
+  /** Mandatory Romanian consumer-protection links (OUG 34/2014 + Regulation (EU) 524/2013). */
+  legal: {
+    anpcUrl: 'https://anpc.ro/',
+    odrUrl: 'https://ec.europa.eu/consumers/odr',
   },
 
   openingHours: {

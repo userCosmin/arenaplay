@@ -12,22 +12,22 @@ export default function PlaygroundPage() {
   return (
     <>
       <SEO
-        title="Playground Arena Play"
-        description="XR, VR, simulatoare auto și de zbor, PlayStation și multe altele. Descoperă Playground Arena Play — program, tarife și rezervare."
-        path="/playground/"
+        title="Loc de joacă Arena Play"
+        description="XR, VR, simulatoare auto și de zbor, PlayStation și multe altele. Descoperă Locul de joacă Arena Play — program, tarife și rezervare."
+        path="/loc-de-joaca/"
       />
       <PageHero
-        eyebrow="Playground"
-        title="PLAYGROUND ARENA PLAY"
+        eyebrow="Loc de joacă"
+        title="LOC DE JOACĂ ARENA PLAY"
         subtitle="Intră în joc."
         accent="playground"
-        breadcrumbs={[{ label: 'Playground', href: '/playground/' }]}
+        breadcrumbs={[{ label: 'Loc de joacă', href: '/loc-de-joaca/' }]}
       >
         <div className="flex flex-wrap gap-4">
-          <Button to="/playground/tarife-program/" accent="playground" size="lg" icon={<Gamepad2 className="h-5 w-5" />} iconPosition="left">
-            Rezervă Playground
+          <Button to="/loc-de-joaca/tarife-program/" accent="playground" size="lg" icon={<Gamepad2 className="h-5 w-5" />} iconPosition="left">
+            Rezervă Loc de joacă
           </Button>
-          <Button to="/playground/activitati/" variant="outline" accent="ink" size="lg" className="!border-white !text-white hover:!bg-white/10">
+          <Button to="/loc-de-joaca/activitati/" variant="outline" accent="ink" size="lg" className="!border-white !text-white hover:!bg-white/10">
             Vezi activitățile
           </Button>
         </div>
@@ -39,7 +39,7 @@ export default function PlaygroundPage() {
           {activities.map((activity) => (
             <a
               key={activity.id}
-              href={`/playground/activitati/#${activity.id}`}
+              href={`/loc-de-joaca/activitati/#${activity.id}`}
               className="group rounded-3xl bg-ink-50 p-6 transition-all hover:-translate-y-1 hover:shadow-lift"
             >
               <span className="text-xs font-semibold uppercase tracking-wide text-playground">{activity.category}</span>
@@ -80,14 +80,14 @@ export default function PlaygroundPage() {
           </div>
         </div>
         <div className="mt-10">
-          <Button to="/playground/tarife-program/" accent="playground" size="lg">
-            Rezervă Playground
+          <Button to="/loc-de-joaca/tarife-program/" accent="playground" size="lg">
+            Rezervă Loc de joacă
           </Button>
         </div>
       </Section>
 
-      <Gallery category="playground" title="Galerie Playground" />
-      <FAQSection category="playground" title="Întrebări frecvente despre Playground" />
+      <Gallery category="playground" title="Galerie Loc de joacă" />
+      <FAQSection category="playground" title="Întrebări frecvente despre Locul de joacă" />
     </>
   );
 }

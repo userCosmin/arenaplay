@@ -75,7 +75,7 @@ export function PlaygroundBookingForm() {
       {result && <FormStatus status={result.status} message={result.message} />}
 
       <Button type="submit" accent="playground" size="lg" disabled={isSubmitting} icon={<Send className="h-4 w-4" />}>
-        {isSubmitting ? 'Se trimite...' : 'Rezervă Playground'}
+        {isSubmitting ? 'Se trimite...' : 'Rezervă Loc de joacă'}
       </Button>
     </form>
   );

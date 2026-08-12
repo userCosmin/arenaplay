@@ -34,7 +34,7 @@ export async function submitPlaygroundBooking(payload: PlaygroundBookingFormData
   // TODO: replace with `return apiPost('/leads/playground', payload);`
   return mockDelay({
     success: true,
-    message: 'Rezervarea ta pentru Playground a fost trimisă. Îți confirmăm disponibilitatea în scurt timp.',
+    message: 'Rezervarea ta pentru Locul de joacă a fost trimisă. Îți confirmăm disponibilitatea în scurt timp.',
     data: payload,
   });
 }
@@ -52,7 +52,7 @@ export async function submitArenaMobilaRequest(payload: ArenaMobilaRequestFormDa
   // TODO: replace with `return apiPost('/leads/arena-mobila', payload);`
   return mockDelay({
     success: true,
-    message: 'Solicitarea ta de ofertă Arena Mobilă a fost trimisă. Nu reprezintă o rezervare confirmată.',
+    message: 'Solicitarea ta de ofertă Arena XR a fost trimisă. Nu reprezintă o rezervare confirmată.',
     data: payload,
   });
 }

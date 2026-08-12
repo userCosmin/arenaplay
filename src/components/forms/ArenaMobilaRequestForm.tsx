@@ -90,7 +90,7 @@ export function ArenaMobilaRequestForm({ defaultType }: ArenaMobilaRequestFormPr
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <FormField label="Localitate" htmlFor="am-locality" required error={errors.locality?.message}>
-          <Input id="am-locality" placeholder="ex: București" hasError={!!errors.locality} {...register('locality')} />
+          <Input id="am-locality" placeholder="ex: Alba Iulia" hasError={!!errors.locality} {...register('locality')} />
         </FormField>
         <FormField label="Locație (opțional)" htmlFor="am-location" error={errors.location?.message}>
           <Input id="am-location" placeholder="Adresă / nume locație" {...register('location')} />

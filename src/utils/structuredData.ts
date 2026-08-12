@@ -35,7 +35,7 @@ export function localBusinessSchema() {
       opens: entry.opens,
       closes: entry.closes,
     })),
-    sameAs: [social.facebook, social.instagram, social.tiktok, social.youtube],
+    sameAs: [social.facebook, social.instagram, social.tiktok, social.youtube].filter(Boolean),
   };
 }
 
@@ -47,7 +47,7 @@ export function organizationSchema() {
     url: url.production,
     logo: `${url.production}/images/brand/logo.png`,
     foundingDate: brand.foundingYear,
-    sameAs: [social.facebook, social.instagram, social.tiktok, social.youtube],
+    sameAs: [social.facebook, social.instagram, social.tiktok, social.youtube].filter(Boolean),
   };
 }
 

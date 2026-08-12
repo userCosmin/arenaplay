@@ -10,7 +10,7 @@ export function LocationHours() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
         <div>
           <h2 className="font-display text-display-md font-extrabold text-ink-900">Locație &amp; Program</h2>
-          <p className="mt-4 max-w-md text-ink-500">Te așteptăm în locația noastră sau venim noi la tine, prin Arena Mobilă.</p>
+          <p className="mt-4 max-w-md text-ink-500">Te așteptăm în locația noastră sau venim noi la tine, prin Arena XR.</p>
 
           <div className="mt-8 flex flex-col gap-5">
             <div className="flex items-start gap-3">
@@ -31,7 +31,7 @@ export function LocationHours() {
             <div className="flex items-start gap-3">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-brand-500" aria-hidden="true" />
               <div>
-                <p className="font-semibold text-ink-900">Program Playground</p>
+                <p className="font-semibold text-ink-900">Program Loc de joacă</p>
                 {siteConfig.openingHours.playground.map((entry) => (
                   <p key={entry.days} className="text-ink-500">
                     {entry.days}: <span className="font-medium text-ink-800">{entry.hours}</span>

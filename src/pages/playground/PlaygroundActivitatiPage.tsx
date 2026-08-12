@@ -8,20 +8,20 @@ import { activities } from '@/data/activities';
 
 export default function PlaygroundActivitatiPage() {
   const breadcrumbs = [
-    { label: 'Playground', href: '/playground/' },
-    { label: 'Activități', href: '/playground/activitati/' },
+    { label: 'Loc de joacă', href: '/loc-de-joaca/' },
+    { label: 'Activități', href: '/loc-de-joaca/activitati/' },
   ];
 
   return (
     <>
       <SEO
-        title="Activități Playground — XR, VR, Simulatoare, PlayStation"
-        description="Descoperă toate activitățile din Playground Arena Play: zonă XR, VR, simulator auto, simulator de zbor, PlayStation și activități extra."
-        path="/playground/activitati/"
+        title="Activități Loc de joacă — XR, VR, Simulatoare, PlayStation"
+        description="Descoperă toate activitățile din Locul de joacă Arena Play: zonă XR, VR, simulator auto, simulator de zbor, PlayStation și activități extra."
+        path="/loc-de-joaca/activitati/"
       />
       <PageHero
         eyebrow="Activități"
-        title="Activitățile Playground"
+        title="Activitățile Locului de joacă"
         subtitle="De la XR și VR la simulatoare de curse și zbor — fiecare zonă are propriul ei nivel de adrenalină."
         accent="playground"
         breadcrumbs={breadcrumbs}
@@ -55,7 +55,7 @@ export default function PlaygroundActivitatiPage() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button to="/playground/tarife-program/" accent="playground" size="lg">
+          <Button to="/loc-de-joaca/tarife-program/" accent="playground" size="lg">
             Vezi program &amp; tarife
           </Button>
         </div>

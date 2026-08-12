@@ -1,7 +1,7 @@
 import type { PriceItem, Offer } from '@/types';
 
 export const playgroundPricing: PriceItem[] = [
-  { id: 'ora-copil', label: 'Acces Playground', price: 45, unit: 'lei / oră / copil' },
+  { id: 'ora-copil', label: 'Acces Loc de joacă', price: 45, unit: 'lei / oră / copil' },
   { id: 'pachet-2h', label: 'Pachet 2 ore', price: 79, unit: 'lei / copil', note: 'Economisești 11 lei' },
   { id: 'xr-vr-sesiune', label: 'Sesiune XR sau VR', price: 25, unit: 'lei / sesiune' },
   { id: 'simulator-sesiune', label: 'Simulator auto / zbor', price: 20, unit: 'lei / sesiune' },

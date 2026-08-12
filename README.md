@@ -1,7 +1,7 @@
 # Arena Play — Official Website
 
 Enterprise-grade, production-ready marketing site for **Arena Play**: Petreceri pentru copii,
-Playground, Afterschool și Arena Mobilă. Built with React 19, TypeScript and Vite, and deployed
+Loc de joacă, Afterschool și Arena XR. Built with React 19, TypeScript and Vite, and deployed
 as a static site on Cloudflare Pages.
 
 ## Tech stack
@@ -47,8 +47,8 @@ Other editable "CMS-ready" content lives in `src/data/*.ts`:
 | `navigation.ts` | Header & footer menus |
 | `services.ts` | The four homepage service cards |
 | `packages.ts` | Party packages & pricing |
-| `activities.ts` | Playground activities |
-| `pricing.ts` | Playground tariffs & offers |
+| `activities.ts` | Loc de joacă activities |
+| `pricing.ts` | Loc de joacă tariffs & offers |
 | `curriculum.ts` | Afterschool daily schedule & pillars |
 | `testimonials.ts` | Homepage testimonials carousel |
 | `faq.ts` | FAQ accordion (also powers FAQPage JSON-LD) |
@@ -67,7 +67,7 @@ src/
     ui/          Reusable primitives (Button, Card, Modal, Accordion, form fields, ...)
     layout/       Header, Footer, mobile menu/action bar, floating WhatsApp button, Layout
     sections/     Page sections shared across routes (Hero, ServiceCards, FAQSection, ...)
-    forms/        One RHF+Zod form per service (Petreceri, Playground, Afterschool, Arena Mobilă, Contact)
+    forms/        One RHF+Zod form per service (Petreceri, Loc de joacă, Afterschool, Arena XR, Contact)
     seo/           <SEO> (Helmet) and <JsonLd> structured-data helpers
   pages/           One file per route, grouped by service folder
   data/            CMS-ready content (see table above)
@@ -88,12 +88,12 @@ Homepage plus 17 routes, matching the approved site architecture exactly:
 
 ```
 /
-/petreceri-copii/                /petreceri-copii/pachete/
-/playground/                     /playground/activitati/          /playground/tarife-program/
-/afterschool/                    /afterschool/program/            /afterschool/inscrieri/
-/arena-mobila/                   /arena-mobila/scoli/             /arena-mobila/evenimente/
-/arena-mobila/petreceri-private/ /arena-mobila/solicita-oferta/
-/despre-noi/                     /contact/                        /rezerva/
+/petreceri-copii/            /petreceri-copii/pachete/
+/loc-de-joaca/                /loc-de-joaca/activitati/       /loc-de-joaca/tarife-program/
+/afterschool/                /afterschool/program/           /afterschool/inscrieri/
+/arena-xr/                    /arena-xr/scoli/                /arena-xr/evenimente/
+/arena-xr/petreceri-private/   /arena-xr/solicita-oferta/
+/despre-noi/                  /contact/                       /rezerva/
 ```
 
 Every route is code-split (`React.lazy`) and renders its own `<SEO>` (title, meta description,
@@ -132,6 +132,26 @@ VITE_FB_PIXEL_ID=
 VITE_CLARITY_ID=
 VITE_API_BASE_URL=
 ```
+
+## SEO & GEO (AI answer engines)
+
+Every route is registered in three places that must stay in sync when adding a page:
+`src/App.tsx` (route), the matching page's `<SEO path="...">` prop, and `public/sitemap.xml`.
+
+Because this is a client-rendered SPA, `npm run build` automatically runs
+`scripts/prerender.mjs` as a `postbuild` step. For every route it writes a
+`dist/<route>/index.html` that already contains the real title, meta description,
+canonical URL, Open Graph/Twitter tags, JSON-LD (LocalBusiness/BreadcrumbList/FAQPage)
+and real semantic HTML (H1, headings, paragraphs) — not just the empty SPA shell.
+This matters because most AI/LLM crawlers (GPTBot, ClaudeBot, PerplexityBot, CCBot —
+the crawlers relevant to GEO) fetch raw HTML and do not execute JavaScript, so without
+this step they would see nothing. The full interactive React app still loads and takes
+over instantly for real visitors; the prerendered markup only matters for that first
+paint and for non-JS crawlers. If you change a page's copy, update the matching entry
+in `scripts/prerender.mjs` too.
+
+`public/llms.txt` and `public/llms-full.txt` give AI agents a structured summary of
+every page and are kept in sync with the same URLs.
 
 ## Deployment — Cloudflare Pages
 

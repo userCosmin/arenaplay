@@ -7,25 +7,25 @@ import { Button } from '@/components/ui/Button';
 
 export default function ArenaMobilaScoliPage() {
   const breadcrumbs = [
-    { label: 'Arena Mobilă', href: '/arena-mobila/' },
-    { label: 'Școli', href: '/arena-mobila/scoli/' },
+    { label: 'Arena XR', href: '/arena-xr/' },
+    { label: 'Școli', href: '/arena-xr/scoli/' },
   ];
 
   return (
     <>
       <SEO
-        title="Arena Mobilă pentru Școli & Educație"
+        title="Arena XR pentru Școli & Educație"
         description="Activități tematice, evenimente școlare și demonstrații XR aduse direct la școala ta. Organizare pe grupe și necesar logistic explicat clar."
-        path="/arena-mobila/scoli/"
+        path="/arena-xr/scoli/"
       />
       <PageHero
         eyebrow="Școli & Educație"
-        title="Arena Mobilă pentru școli"
+        title="Arena XR pentru școli"
         subtitle="Activități educaționale itinerante, adaptate contextului școlar."
         accent="arenamobila"
         breadcrumbs={breadcrumbs}
       >
-        <Button to="/arena-mobila/solicita-oferta/" accent="arenamobila" size="lg">
+        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
           Solicită o activitate
         </Button>
       </PageHero>
@@ -48,7 +48,7 @@ export default function ArenaMobilaScoliPage() {
           probleme.
         </p>
         <div className="mt-8">
-          <Button to="/arena-mobila/solicita-oferta/" accent="arenamobila" size="lg">
+          <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
             Solicită detalii pentru școală
           </Button>
         </div>

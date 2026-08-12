@@ -17,7 +17,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-3',
-    question: 'Playground-ul este deschis în timpul săptămânii?',
+    question: 'Locul de joacă este deschis în timpul săptămânii?',
     answer:
       'În weekend (sâmbătă–duminică) suntem deschiși între 13:30–21:30 fără rezervare. În timpul săptămânii, accesul se face doar cu rezervare în avans, pentru grupuri sau evenimente private.',
     category: 'playground',
@@ -31,9 +31,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-5',
-    question: 'Arena Mobilă vine în orice localitate?',
+    question: 'Arena XR vine în orice localitate?',
     answer:
-      'Ne deplasăm în București și în majoritatea localităților din apropiere. Pentru distanțe mai mari, te rugăm să ne contactezi pentru a verifica disponibilitatea și costurile de transport.',
+      'Ne deplasăm în Alba Iulia și în majoritatea localităților din apropiere. Pentru distanțe mai mari, te rugăm să ne contactezi pentru a verifica disponibilitatea și costurile de transport.',
     category: 'arena-mobila',
   },
   {

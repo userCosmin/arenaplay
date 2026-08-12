@@ -10,7 +10,7 @@ export const partyPackages: PartyPackage[] = [
     kids: 'până la 10 copii',
     includes: [
       'Spațiu privat rezervat',
-      'Acces activități Playground',
+      'Acces activități Loc de joacă',
       'Animator pentru 2 ore',
       'Decor tematic simplu',
     ],
@@ -25,7 +25,7 @@ export const partyPackages: PartyPackage[] = [
     featured: true,
     includes: [
       'Spațiu privat rezervat',
-      'Acces nelimitat Playground + XR/VR',
+      'Acces nelimitat Loc de joacă + XR/VR',
       'Animator + facepainting',
       'Decor tematic personalizat',
       'Tort și candy bar simplu',

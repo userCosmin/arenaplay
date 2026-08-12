@@ -4,9 +4,9 @@ import { Section } from '@/components/ui/Section';
 
 const paths = [
   { need: 'Vreau o petrecere', href: '/petreceri-copii/pachete/', accent: 'text-petreceri' },
-  { need: 'Vreau să vin la joacă', href: '/playground/', accent: 'text-playground' },
+  { need: 'Vreau să vin la joacă', href: '/loc-de-joaca/', accent: 'text-playground' },
   { need: 'Caut un afterschool', href: '/afterschool/', accent: 'text-afterschool-dark' },
-  { need: 'Vreau Arena Play la mine', href: '/arena-mobila/', accent: 'text-arenamobila-dark' },
+  { need: 'Vreau Arena Play la mine', href: '/arena-xr/', accent: 'text-arenamobila-dark' },
 ];
 
 /** "Ce cauți?" — repeats the four routes in need-oriented language, per the site architecture doc. */

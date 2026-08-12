@@ -28,8 +28,8 @@ export default function DespreNoiPage() {
             mediu sigur și prietenos.
           </p>
           <p className="mt-4">
-            Astăzi, Arena Play înseamnă patru experiențe complementare: petreceri memorabile, un playground plin de
-            tehnologie, un program afterschool de calitate și o Arena Mobilă care aduce toată experiența direct la tine,
+            Astăzi, Arena Play înseamnă patru experiențe complementare: petreceri memorabile, un loc de joacă plin de
+            tehnologie, un program afterschool de calitate și o Arena XR care aduce toată experiența direct la tine,
             oriunde ai avea nevoie.
           </p>
         </div>

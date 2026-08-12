@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Youtube, Scale, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Container } from '@/components/ui/Container';
 import { Logo } from './Logo';
@@ -126,7 +126,36 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-ink-500 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+          <p className="text-xs text-ink-500">
+            Conform legislației privind protecția consumatorilor, aveți dreptul de a depune o
+            plângere sau de a solicita soluționarea online a unui eventual litigiu:
+          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href={siteConfig.legal.odrUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-white/10"
+              aria-label="Platforma europeană de soluționare online a litigiilor (ODR) - se deschide într-o filă nouă"
+            >
+              <Scale className="h-4 w-4 text-brand-400" aria-hidden="true" />
+              SOL — Soluționarea online a litigiilor
+            </a>
+            <a
+              href={siteConfig.legal.anpcUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-white/10"
+              aria-label="Autoritatea Națională pentru Protecția Consumatorilor (ANPC) - se deschide într-o filă nouă"
+            >
+              <ShieldCheck className="h-4 w-4 text-brand-400" aria-hidden="true" />
+              ANPC
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-ink-500 sm:flex-row">
           <p>
             © {year} {siteConfig.brand.legalName}. Toate drepturile rezervate.
           </p>

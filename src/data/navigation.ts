@@ -3,20 +3,20 @@ import type { NavItem } from '@/types';
 export const mainNavigation: NavItem[] = [
   { label: 'Acasă', href: '/' },
   {
+    label: 'Loc de joacă',
+    href: '/loc-de-joaca/',
+    children: [
+      { label: 'Prezentare', href: '/loc-de-joaca/', description: 'Intră în joc' },
+      { label: 'Activități', href: '/loc-de-joaca/activitati/', description: 'XR, VR, simulatoare și mai mult' },
+      { label: 'Program & Tarife', href: '/loc-de-joaca/tarife-program/', description: 'Orar și prețuri' },
+    ],
+  },
+  {
     label: 'Petreceri',
     href: '/petreceri-copii/',
     children: [
       { label: 'Prezentare', href: '/petreceri-copii/', description: 'Descoperă experiența de petrecere' },
       { label: 'Pachete & Rezervare', href: '/petreceri-copii/pachete/', description: 'Alege pachetul potrivit' },
-    ],
-  },
-  {
-    label: 'Playground',
-    href: '/playground/',
-    children: [
-      { label: 'Prezentare', href: '/playground/', description: 'Intră în joc' },
-      { label: 'Activități', href: '/playground/activitati/', description: 'XR, VR, simulatoare și mai mult' },
-      { label: 'Program & Tarife', href: '/playground/tarife-program/', description: 'Orar și prețuri' },
     ],
   },
   {
@@ -29,14 +29,14 @@ export const mainNavigation: NavItem[] = [
     ],
   },
   {
-    label: 'Arena Mobilă',
-    href: '/arena-mobila/',
+    label: 'Arena XR',
+    href: '/arena-xr/',
     children: [
-      { label: 'Prezentare', href: '/arena-mobila/', description: 'Aducem experiența la tine' },
-      { label: 'Școli', href: '/arena-mobila/scoli/', description: 'Activități educaționale itinerante' },
-      { label: 'Evenimente & Festivaluri', href: '/arena-mobila/evenimente/', description: 'Atracție interactivă' },
-      { label: 'Petreceri Private', href: '/arena-mobila/petreceri-private/', description: 'La locația ta' },
-      { label: 'Solicită Ofertă', href: '/arena-mobila/solicita-oferta/', description: 'Formular de solicitare' },
+      { label: 'Prezentare', href: '/arena-xr/', description: 'Aducem experiența la tine' },
+      { label: 'Școli', href: '/arena-xr/scoli/', description: 'Activități educaționale itinerante' },
+      { label: 'Evenimente & Festivaluri', href: '/arena-xr/evenimente/', description: 'Atracție interactivă' },
+      { label: 'Petreceri Private', href: '/arena-xr/petreceri-private/', description: 'La locația ta' },
+      { label: 'Solicită Ofertă', href: '/arena-xr/solicita-oferta/', description: 'Formular de solicitare' },
     ],
   },
   { label: 'Despre noi', href: '/despre-noi/' },
@@ -45,10 +45,10 @@ export const mainNavigation: NavItem[] = [
 
 export const footerQuickLinks: NavItem[] = [
   { label: 'Acasă', href: '/' },
+  { label: 'Loc de joacă', href: '/loc-de-joaca/' },
   { label: 'Petreceri copii', href: '/petreceri-copii/' },
-  { label: 'Playground', href: '/playground/' },
   { label: 'Afterschool', href: '/afterschool/' },
-  { label: 'Arena Mobilă', href: '/arena-mobila/' },
+  { label: 'Arena XR', href: '/arena-xr/' },
   { label: 'Despre noi', href: '/despre-noi/' },
   { label: 'Contact', href: '/contact/' },
   { label: 'Rezervă acum', href: '/rezerva/' },

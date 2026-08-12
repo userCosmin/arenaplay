@@ -7,16 +7,16 @@ import { Button } from '@/components/ui/Button';
 
 export default function ArenaMobilaPetreceriPrivatePage() {
   const breadcrumbs = [
-    { label: 'Arena Mobilă', href: '/arena-mobila/' },
-    { label: 'Petreceri Private', href: '/arena-mobila/petreceri-private/' },
+    { label: 'Arena XR', href: '/arena-xr/' },
+    { label: 'Petreceri Private', href: '/arena-xr/petreceri-private/' },
   ];
 
   return (
     <>
       <SEO
-        title="Arena Mobilă — Petreceri & Evenimente Private"
-        description="Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena Mobilă."
-        path="/arena-mobila/petreceri-private/"
+        title="Arena XR — Petreceri & Evenimente Private"
+        description="Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena XR."
+        path="/arena-xr/petreceri-private/"
       />
       <PageHero
         eyebrow="Petreceri & Evenimente Private"
@@ -25,8 +25,8 @@ export default function ArenaMobilaPetreceriPrivatePage() {
         accent="arenamobila"
         breadcrumbs={breadcrumbs}
       >
-        <Button to="/arena-mobila/solicita-oferta/" accent="arenamobila" size="lg">
-          Solicită Arena Mobilă la locația ta
+        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
+          Solicită Arena XR la locația ta
         </Button>
       </PageHero>
 

@@ -12,8 +12,8 @@ import { useEffect } from 'react';
 
 export default function PlaygroundTarifeProgramPage() {
   const breadcrumbs = [
-    { label: 'Playground', href: '/playground/' },
-    { label: 'Program & Tarife', href: '/playground/tarife-program/' },
+    { label: 'Loc de joacă', href: '/loc-de-joaca/' },
+    { label: 'Program & Tarife', href: '/loc-de-joaca/tarife-program/' },
   ];
 
   useEffect(() => {
@@ -24,9 +24,9 @@ export default function PlaygroundTarifeProgramPage() {
   return (
     <>
       <SEO
-        title="Program & Tarife Playground"
-        description="Programul complet Playground Arena Play: weekend deschis fără rezervare, tarife pe oră și pachete, plus ofertele active."
-        path="/playground/tarife-program/"
+        title="Program & Tarife Loc de joacă"
+        description="Programul complet al Locului de joacă Arena Play: weekend deschis fără rezervare, tarife pe oră și pachete, plus ofertele active."
+        path="/loc-de-joaca/tarife-program/"
       />
       <PageHero
         eyebrow="Program & Tarife"
@@ -83,7 +83,7 @@ export default function PlaygroundTarifeProgramPage() {
 
       <Section className="bg-ink-50" id="rezervare">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mb-2 font-display text-display-md font-extrabold text-ink-900">Rezervă Playground</h2>
+          <h2 className="mb-2 font-display text-display-md font-extrabold text-ink-900">Rezervă Loc de joacă</h2>
           <p className="mb-8 text-ink-500">Completează formularul — echipa noastră confirmă rapid disponibilitatea.</p>
           <Card>
             <PlaygroundBookingForm />

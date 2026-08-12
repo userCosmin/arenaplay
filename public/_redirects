@@ -1,2 +1,7 @@
-/* /index.html 200
-/security.txt /.well-known/security.txt 200
+# Legacy URLs -> renamed sections (permanent redirects, preserve any inbound links/bookmarks)
+/playground/*    /loc-de-joaca/:splat   301
+/arena-mobila/*  /arena-xr/:splat       301
+/security.txt    /.well-known/security.txt   200
+
+# SPA fallback - must stay last, Cloudflare Pages applies the first matching rule
+/*  /index.html  200

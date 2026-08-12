@@ -10,19 +10,19 @@ const routes = [
   {
     title: 'Școli',
     description: 'Activități educaționale itinerante, demonstrații XR și evenimente școlare tematice.',
-    href: '/arena-mobila/scoli/',
+    href: '/arena-xr/scoli/',
     icon: School,
   },
   {
     title: 'Evenimente & Festivaluri',
     description: 'Atracție interactivă pentru evenimente cu flux mare de public: festivaluri, activări de brand.',
-    href: '/arena-mobila/evenimente/',
+    href: '/arena-xr/evenimente/',
     icon: CalendarHeart,
   },
   {
     title: 'Petreceri Private',
     description: 'Aducem experiența Arena Play direct la locația ta, pentru petreceri și evenimente private.',
-    href: '/arena-mobila/petreceri-private/',
+    href: '/arena-xr/petreceri-private/',
     icon: PartyPopper,
   },
 ];
@@ -31,19 +31,19 @@ export default function ArenaMobilaPage() {
   return (
     <>
       <SEO
-        title="Arena Play Mobilă — Aducem experiența la tine"
-        description="Arena Play Mobilă se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta."
-        path="/arena-mobila/"
+        title="Arena XR — Aducem experiența la tine"
+        description="Arena XR se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta."
+        path="/arena-xr/"
       />
       <PageHero
-        eyebrow="Arena Mobilă"
-        title="ARENA PLAY MOBILĂ"
+        eyebrow="Arena XR"
+        title="ARENA XR"
         subtitle="Noi aducem experiența la tine."
         accent="arenamobila"
-        breadcrumbs={[{ label: 'Arena Mobilă', href: '/arena-mobila/' }]}
+        breadcrumbs={[{ label: 'Arena XR', href: '/arena-xr/' }]}
       >
-        <Button to="/arena-mobila/solicita-oferta/" accent="arenamobila" size="lg" icon={<Truck className="h-5 w-5" />} iconPosition="left">
-          Solicită Arena Mobilă
+        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg" icon={<Truck className="h-5 w-5" />} iconPosition="left">
+          Solicită Arena XR
         </Button>
       </PageHero>
 
@@ -70,7 +70,6 @@ export default function ArenaMobilaPage() {
       <HowItWorks
         title="Cum funcționează"
         accentClass="bg-arenamobila"
-        className="bg-arenamobila-navy [&_h2]:text-white [&_h3]:text-white [&_p]:text-white/70"
         steps={[
           { title: 'Solicitare', description: 'Ne trimiți detaliile despre locație, dată și tip de eveniment.' },
           { title: 'Configurare', description: 'Stabilim împreună activitățile potrivite și logistica necesară.' },
@@ -96,7 +95,7 @@ export default function ArenaMobilaPage() {
         </div>
       </Section>
 
-      <Gallery category="arena-mobila" title="Galerie Arena Mobilă" />
+      <Gallery category="arena-mobila" title="Galerie Arena XR" />
     </>
   );
 }

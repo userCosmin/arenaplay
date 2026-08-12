@@ -4,13 +4,13 @@ export const partners: Partner[] = [
   {
     id: 'p1',
     name: 'Şcoala Gimnazială Nr. 12',
-    description: 'Partener educațional pentru programul Afterschool și activități Arena Mobilă.',
+    description: 'Partener educațional pentru programul Afterschool și activități Arena XR.',
     logo: '/images/partners/partner-1.webp',
   },
   {
     id: 'p2',
     name: 'TechXR Solutions',
-    description: 'Furnizor de echipamente XR/VR pentru zona Playground.',
+    description: 'Furnizor de echipamente XR/VR pentru zona de joacă.',
     logo: '/images/partners/partner-2.webp',
   },
   {

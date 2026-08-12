@@ -37,7 +37,7 @@ export default function PetreceriPage() {
         accentClass="bg-petreceri text-white"
         features={[
           { icon: Sparkles, title: 'Spațiu privat', description: 'O zonă dedicată doar petrecerii voastre, decorată tematic.' },
-          { icon: PartyPopper, title: 'Activități incluse', description: 'Acces la jocuri, Playground și animație pentru toți invitații.' },
+          { icon: PartyPopper, title: 'Activități incluse', description: 'Acces la jocuri, Loc de joacă și animație pentru toți invitații.' },
           { icon: Users, title: 'Animator dedicat', description: 'Un animator profesionist se ocupă de distracția copiilor.' },
           { icon: ShieldCheck, title: 'Fără griji', description: 'Ne ocupăm de organizare — tu te bucuri de eveniment alături de copil.' },
         ]}
@@ -45,6 +45,7 @@ export default function PetreceriPage() {
 
       <HowItWorks
         accentClass="bg-petreceri"
+        className="bg-white"
         steps={[
           { title: 'Alegi data', description: 'Trimiți o solicitare cu data dorită pentru petrecere.' },
           { title: 'Alegi pachetul', description: 'Selectezi pachetul potrivit numărului de copii și bugetului.' },
