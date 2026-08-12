@@ -9,6 +9,7 @@ import { Select } from '@/components/ui/Select';
 import { Checkbox } from '@/components/ui/Checkbox';
 import { Button } from '@/components/ui/Button';
 import { FormStatus } from '@/components/ui/FormStatus';
+import { Honeypot } from '@/components/ui/Honeypot';
 import { partyBookingSchema, type PartyBookingFormData } from '@/utils/validation';
 import { submitPartyBooking } from '@/services/bookingService';
 import { trackEvent } from '@/utils/analytics';
@@ -43,6 +44,7 @@ export function PartyBookingForm({ defaultPackageId }: PartyBookingFormProps) {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-5">
+      <Honeypot registration={register('website')} />
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <FormField label="Nume complet" htmlFor="party-name" required error={errors.name?.message}>
           <Input id="party-name" placeholder="Numele tău" hasError={!!errors.name} {...register('name')} />

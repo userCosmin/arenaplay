@@ -23,6 +23,9 @@ export const consentSchema = z
   .boolean()
   .refine((val) => val === true, { message: 'Trebuie să fii de acord cu prelucrarea datelor.' });
 
+/** Honeypot anti-spam field — must stay empty; bots tend to fill every input they find. */
+export const honeypotSchema = z.string().max(0, 'Solicitare respinsă.').optional();
+
 /** Petreceri booking form */
 export const partyBookingSchema = z.object({
   name: nameSchema,
@@ -32,6 +35,7 @@ export const partyBookingSchema = z.object({
   kidsCount: z.string().min(1, 'Introdu numărul aproximativ de copii.'),
   packageId: z.string().min(1, 'Alege un pachet.'),
   message: messageSchema,
+  website: honeypotSchema,
   consent: consentSchema,
 });
 export type PartyBookingFormData = z.infer<typeof partyBookingSchema>;
@@ -45,6 +49,7 @@ export const playgroundBookingSchema = z.object({
   preferredTime: z.string().min(1, 'Alege un interval orar.'),
   peopleCount: z.string().min(1, 'Introdu numărul de persoane.'),
   message: messageSchema,
+  website: honeypotSchema,
   consent: consentSchema,
 });
 export type PlaygroundBookingFormData = z.infer<typeof playgroundBookingSchema>;
@@ -58,6 +63,7 @@ export const afterschoolEnrollSchema = z.object({
   childGrade: z.string().min(1, 'Alege clasa copilului.'),
   school: z.string().trim().max(120).optional(),
   message: messageSchema,
+  website: honeypotSchema,
   consent: consentSchema,
 });
 export type AfterschoolEnrollFormData = z.infer<typeof afterschoolEnrollSchema>;
@@ -75,6 +81,7 @@ export const arenaMobilaRequestSchema = z.object({
   eventDate: z.string().min(1, 'Alege data estimată.'),
   participants: z.string().min(1, 'Introdu numărul estimativ de participanți.'),
   message: messageSchema,
+  website: honeypotSchema,
   consent: consentSchema,
 });
 export type ArenaMobilaRequestFormData = z.infer<typeof arenaMobilaRequestSchema>;
@@ -86,6 +93,7 @@ export const contactFormSchema = z.object({
   email: emailSchema,
   subject: z.string().trim().min(2, 'Introdu un subiect.').max(120),
   message: z.string().trim().min(5, 'Mesajul trebuie să aibă minimum 5 caractere.').max(1000),
+  website: honeypotSchema,
   consent: consentSchema,
 });
 export type ContactFormData = z.infer<typeof contactFormSchema>;

@@ -100,13 +100,30 @@ Every route is code-split (`React.lazy`) and renders its own `<SEO>` (title, met
 canonical, Open Graph, Twitter Card) plus relevant JSON-LD (`LocalBusiness`, `Organization`,
 `BreadcrumbList`, `FAQPage`).
 
-## Forms & future backend integration
+## Forms & email delivery
 
-Every form validates with Zod (`src/utils/validation.ts`) and currently submits through mocked
-functions in `src/services/bookingService.ts` that simulate a network call and always resolve
-successfully — this lets you test the full UX (loading state, success/error message, analytics
-event) before a backend exists. Swap each function's body for the matching `apiPost(...)` call
-(see `src/services/api.ts`) once a backend/CRM endpoint exists; set `VITE_API_BASE_URL` in `.env`.
+Every form validates with Zod (`src/utils/validation.ts`) and includes a hidden honeypot field
+(`src/components/ui/Honeypot.tsx`) — bots that fill it in are silently rejected both client-side
+(Zod) and server-side (the Function below).
+
+On submit, `src/services/bookingService.ts` calls `postLead()` (`src/services/api.ts`), which
+POSTs to `/api/lead`. That endpoint is a Cloudflare Pages Function
+(`functions/api/lead.ts`) that sends the notification email via [Resend](https://resend.com).
+
+**To activate email sending:**
+1. Create a free Resend account at resend.com and generate an API key.
+2. In the Cloudflare Pages project settings → *Environment variables*, add:
+   - `RESEND_API_KEY` — your Resend API key (required).
+   - `LEAD_NOTIFICATION_EMAIL` — where lead notifications are sent (optional; currently defaults
+     to `rusanadrian1973@gmail.com` as a temporary inbox — change this once `contact@arenaplay.ro`
+     is ready to receive mail, e.g. once the domain is verified in Resend).
+   - `RESEND_FROM_EMAIL` — sender address (optional; defaults to Resend's shared
+     `onboarding@resend.dev`, which works without domain verification but is best swapped for a
+     verified `@arenaplay.ro` address later).
+3. Redeploy. No further code changes are needed.
+
+For local testing with Wrangler, copy the same variables into a `.dev.vars` file (git-ignored)
+in the project root and run `npx wrangler pages dev dist`.
 
 ## Analytics
 
@@ -132,6 +149,11 @@ VITE_FB_PIXEL_ID=
 VITE_CLARITY_ID=
 VITE_API_BASE_URL=
 ```
+
+The email-sending Function (`functions/api/lead.ts`) uses separate, server-only variables that
+must be set directly in the Cloudflare Pages dashboard (never committed to `.env`): see
+"Forms & email delivery" above for `RESEND_API_KEY`, `LEAD_NOTIFICATION_EMAIL`,
+`RESEND_FROM_EMAIL`.
 
 ## SEO & GEO (AI answer engines)
 
@@ -161,7 +183,9 @@ This is a static SPA (no Node server, no Express). Two ways to deploy:
 1. Push this repository to GitHub.
 2. In Cloudflare Pages, create a project connected to the repo.
 3. Build command: `npm run build` — Build output directory: `dist`.
-4. Add the `VITE_*` environment variables from `.env.example` in the Pages project settings.
+4. Add the `VITE_*` environment variables from `.env.example`, plus `RESEND_API_KEY`
+   (and optionally `LEAD_NOTIFICATION_EMAIL`, `RESEND_FROM_EMAIL`) for email delivery,
+   in the Pages project settings.
 5. `public/_redirects` (SPA fallback to `index.html`) and `public/_headers` (caching + security
    headers) are picked up automatically from the build output.
 

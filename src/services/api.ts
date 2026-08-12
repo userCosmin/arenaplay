@@ -33,3 +33,30 @@ export async function apiPost<TPayload, TResponse = unknown>(
 
   return (await response.json()) as ApiResponse<TResponse>;
 }
+
+/**
+ * Posts to the Cloudflare Pages Function at /api/lead (see functions/api/lead.ts),
+ * which relays the submission to the configured notification inbox via Resend.
+ * Relative path — works automatically on the same domain in every deployment
+ * (production and preview), no VITE_API_BASE_URL needed.
+ */
+export async function postLead(
+  type: 'petreceri' | 'playground' | 'afterschool' | 'arena-mobila' | 'contact',
+  payload: Record<string, unknown>
+): Promise<ApiResponse> {
+  const { website, ...rest } = payload;
+
+  const response = await fetch('/api/lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, payload: rest, website }),
+  });
+
+  const data = (await response.json().catch(() => null)) as ApiResponse | null;
+
+  if (!response.ok || !data) {
+    throw new Error(data?.message ?? `Request failed with status ${response.status}`);
+  }
+
+  return data;
+}

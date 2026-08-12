@@ -9,6 +9,7 @@ import { Select } from '@/components/ui/Select';
 import { Checkbox } from '@/components/ui/Checkbox';
 import { Button } from '@/components/ui/Button';
 import { FormStatus } from '@/components/ui/FormStatus';
+import { Honeypot } from '@/components/ui/Honeypot';
 import { afterschoolEnrollSchema, type AfterschoolEnrollFormData } from '@/utils/validation';
 import { submitAfterschoolEnroll } from '@/services/bookingService';
 import { trackEvent } from '@/utils/analytics';
@@ -37,6 +38,7 @@ export function AfterschoolEnrollForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-5">
+      <Honeypot registration={register('website')} />
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <FormField label="Nume părinte" htmlFor="as-parent" required error={errors.parentName?.message}>
           <Input id="as-parent" placeholder="Numele tău" hasError={!!errors.parentName} {...register('parentName')} />

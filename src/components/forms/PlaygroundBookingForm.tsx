@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/Textarea';
 import { Checkbox } from '@/components/ui/Checkbox';
 import { Button } from '@/components/ui/Button';
 import { FormStatus } from '@/components/ui/FormStatus';
+import { Honeypot } from '@/components/ui/Honeypot';
 import { playgroundBookingSchema, type PlaygroundBookingFormData } from '@/utils/validation';
 import { submitPlaygroundBooking } from '@/services/bookingService';
 import { trackEvent } from '@/utils/analytics';
@@ -34,6 +35,7 @@ export function PlaygroundBookingForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-5">
+      <Honeypot registration={register('website')} />
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <FormField label="Nume complet" htmlFor="pg-name" required error={errors.name?.message}>
           <Input id="pg-name" placeholder="Numele tău" hasError={!!errors.name} {...register('name')} />

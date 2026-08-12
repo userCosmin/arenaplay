@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/Textarea';
 import { Checkbox } from '@/components/ui/Checkbox';
 import { Button } from '@/components/ui/Button';
 import { FormStatus } from '@/components/ui/FormStatus';
+import { Honeypot } from '@/components/ui/Honeypot';
 import { arenaMobilaRequestSchema, type ArenaMobilaRequestFormData } from '@/utils/validation';
 import { submitArenaMobilaRequest } from '@/services/bookingService';
 import { trackEvent } from '@/utils/analytics';
@@ -52,6 +53,7 @@ export function ArenaMobilaRequestForm({ defaultType }: ArenaMobilaRequestFormPr
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col gap-5">
+      <Honeypot registration={register('website')} />
       <FormField label="Tip solicitare" htmlFor="am-type" required error={errors.requestType?.message}>
         <div className="grid grid-cols-3 gap-3">
           {requestTypes.map((type) => {
