@@ -469,7 +469,7 @@ for (const route of routes) {
   html = html.replace(/<title>.*?<\/title>/s, `<title>${esc(route.title)}</title>`);
   html = html.replace(/<meta\s+name="description"[^>]*content="[^"]*"[^>]*\/>/s, `<meta name="description" content="${esc(route.description)}" />`);
   html = html.replace('</head>', `    ${headExtra}\n  </head>`);
-  html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+  html = html.replace('<div id="root" class="prerender-hidden"></div>', `<div id="root" class="prerender-hidden">${bodyHtml}</div>`);
 
   const outDir = route.path === '/' ? distDir : join(distDir, route.path.replace(/^\//, ''));
   mkdirSync(outDir, { recursive: true });

@@ -20,9 +20,31 @@
       name="description"
       content="Arena Play - distracție, experiențe și educație. Petreceri pentru copii, Loc de joacă cu XR/VR, Afterschool și Arena XR la locația ta."
     />
+    <!--
+      Hide the prerendered SEO/GEO markup (see scripts/prerender.mjs) from real
+      visitors until the React app mounts, so they never see an unstyled flash
+      of raw text. Non-JS crawlers (GPTBot, ClaudeBot, CCBot, etc.) never apply
+      CSS, so they still read the full text content underneath — only the
+      visual paint is affected. src/main.tsx removes this class right after
+      the initial render.
+    -->
+    <style>
+      #root.prerender-hidden {
+        visibility: hidden;
+      }
+    </style>
+    <!-- If JavaScript is unavailable, keep showing the real prerendered content
+         instead of a permanently blank page. -->
+    <noscript>
+      <style>
+        #root.prerender-hidden {
+          visibility: visible;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="prerender-hidden"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

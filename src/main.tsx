@@ -32,3 +32,10 @@ createRoot(rootEl).render(
     </HelmetProvider>
   </StrictMode>
 );
+
+// The initial HTML (see index.html + scripts/prerender.mjs) ships with real
+// content inside #root for SEO/GEO crawlers, hidden from real visitors via
+// the `prerender-hidden` class so they never see an unstyled flash of it.
+// React's initial render above replaces that markup synchronously, so it's
+// safe to reveal the root immediately after — no flash, no layout shift.
+rootEl.classList.remove('prerender-hidden');
