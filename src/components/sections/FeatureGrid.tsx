@@ -24,7 +24,10 @@ export function FeatureGrid({ title, features, accentClass = 'bg-brand-500 text-
       <h2 className="mb-12 font-display text-display-md font-extrabold text-ink-900">{title}</h2>
       <div className={cn('grid grid-cols-1 gap-6', colsClass)}>
         {features.map((feature) => (
-          <div key={feature.title} className="rounded-3xl bg-white p-6 shadow-card">
+          <div
+            key={feature.title}
+            className="rounded-3xl bg-white p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift"
+          >
             <span className={cn('mb-4 flex h-12 w-12 items-center justify-center rounded-2xl', accentClass)}>
               <feature.icon className="h-6 w-6" aria-hidden="true" />
             </span>
