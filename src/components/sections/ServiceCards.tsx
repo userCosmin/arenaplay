@@ -10,8 +10,12 @@ const iconMap = { PartyPopper, Gamepad2, GraduationCap, Truck };
 const cardGradients: Record<string, string> = {
   petreceri: 'from-petreceri/25 via-petreceri/10 to-white',
   playground: 'from-playground/25 via-playground/10 to-white',
-  afterschool: 'from-afterschool/25 via-afterschool/10 to-white',
-  arenamobila: 'from-arenamobila/25 via-arenamobila/10 to-white',
+  afterschool: 'from-white to-white',
+  arenamobila: 'from-white to-white',
+};
+
+const cardBorders: Record<string, string> = {
+  arenamobila: 'border-2 border-ink-900',
 };
 
 const iconColors: Record<string, string> = {
@@ -40,7 +44,7 @@ export function ServiceCards() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className={cn('group flex flex-col rounded-3xl bg-gradient-to-b p-6 shadow-card transition-all hover:-translate-y-1.5 hover:shadow-lift', cardGradients[service.accent])}
+              className={cn('group flex flex-col rounded-3xl bg-gradient-to-b p-6 shadow-card transition-all hover:-translate-y-1.5 hover:shadow-lift', cardGradients[service.accent], cardBorders[service.accent])}
             >
               <span className={cn('mb-5 flex h-12 w-12 items-center justify-center rounded-2xl', iconColors[service.accent])}>
                 <Icon className="h-6 w-6" aria-hidden="true" />
