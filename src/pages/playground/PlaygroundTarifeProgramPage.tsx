@@ -5,7 +5,7 @@ import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { PlaygroundBookingForm } from '@/components/forms/PlaygroundBookingForm';
-import { playgroundPricing, playgroundOffers } from '@/data/pricing';
+import { playgroundPricingWeekend, playgroundPricingWeekday, playgroundOffers } from '@/data/pricing';
 import { siteConfig } from '@/config/site.config';
 import { trackEvent } from '@/utils/analytics';
 import { useEffect } from 'react';
@@ -25,7 +25,7 @@ export default function PlaygroundTarifeProgramPage() {
     <>
       <SEO
         title="Program & Tarife Loc de joacă"
-        description="Programul complet al Locului de joacă Arena Play: weekend deschis fără rezervare, tarife pe oră și pachete, plus ofertele active."
+        description="Programul complet al Locului de joacă Arena Play: weekend 30 lei/sesiune (20 min), 2+1 gratuit, sau acces exclusiv în timpul săptămânii cu rezervare."
         path="/loc-de-joaca/tarife-program/"
       />
       <PageHero
@@ -52,9 +52,24 @@ export default function PlaygroundTarifeProgramPage() {
           </div>
         </div>
 
-        <h2 className="mb-8 font-heading text-display-md font-extrabold text-ink-900">Tarife</h2>
+        <h2 className="mb-2 font-heading text-display-md font-extrabold text-ink-900">Tarife</h2>
+        <p className="mb-6 text-ink-500">Weekend — acces liber, fără rezervare</p>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {playgroundPricing.map((item) => (
+          {playgroundPricingWeekend.map((item) => (
+            <Card key={item.id} hover>
+              <p className="font-semibold text-ink-900">{item.label}</p>
+              <p className="mt-2 flex items-baseline gap-1.5">
+                <span className="font-heading text-3xl font-extrabold text-playground">{item.price}</span>
+                <span className="text-sm text-ink-500">{item.unit}</span>
+              </p>
+              {item.note && <p className="mt-2 text-sm text-ink-400">{item.note}</p>}
+            </Card>
+          ))}
+        </div>
+
+        <p className="mb-6 mt-10 text-ink-500">În timpul săptămânii — doar cu rezervare, acces exclusiv la toate echipamentele</p>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {playgroundPricingWeekday.map((item) => (
             <Card key={item.id} hover>
               <p className="font-semibold text-ink-900">{item.label}</p>
               <p className="mt-2 flex items-baseline gap-1.5">

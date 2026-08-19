@@ -38,9 +38,9 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-6',
-    question: 'Ce este inclus într-un pachet de petrecere?',
+    question: 'Ce este inclus în pachetul de petrecere?',
     answer:
-      'Fiecare pachet include spațiu privat, acces la activități, animație și decor — detaliile complete sunt afișate în pagina de Pachete & Rezervare.',
+      'Pachetul de petrecere (80 lei/copil, minim 10 copii) include acces exclusiv la toate echipamentele, spațiu privat, animator dedicat și decor tematic — detaliile complete sunt afișate în pagina de Pachete & Rezervare.',
     category: 'petreceri',
   },
   {

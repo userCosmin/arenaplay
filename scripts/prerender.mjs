@@ -182,16 +182,14 @@ const routes = [
   {
     path: '/petreceri-vr/pachete/',
     title: 'Pachete Petreceri & Rezervare | Arena Play',
-    description: 'Compară cele trei pachete de petreceri Arena Play — preț, durată, număr de copii și ce este inclus — și rezervă direct online.',
+    description: 'Pachetul de petrecere Arena Play — 80 lei/copil, minim 10 copii, acces exclusiv la toate echipamentele — și rezervă direct online.',
     breadcrumb: [{ label: 'Petreceri VR', href: '/petreceri-vr/' }, { label: 'Pachete & Rezervare', href: '/petreceri-vr/pachete/' }],
     jsonLd: [breadcrumbSchema([{ label: 'Petreceri VR', href: '/petreceri-vr/' }, { label: 'Pachete & Rezervare', href: '/petreceri-vr/pachete/' }])],
     body: `
       <h1>Alege pachetul potrivit</h1>
-      <p>Preț, durată, număr de copii și ce este inclus — totul vizibil, fără pop-up.</p>
-      ${section('Pachete disponibile', `
-        <article><h3>Pachet Basic — 599 lei / petrecere</h3><p>2 ore, până la 10 copii. Include: spațiu privat rezervat, acces activități Loc de joacă, animator 2 ore, decor tematic simplu.</p></article>
-        <article><h3>Pachet Plus — 899 lei / petrecere (cel mai popular)</h3><p>3 ore, până la 15 copii. Include: spațiu privat, acces nelimitat Loc de joacă + XR/VR, animator + facepainting, decor personalizat, tort și candy bar simplu.</p></article>
-        <article><h3>Pachet Premium — 1299 lei / petrecere</h3><p>4 ore, până la 20 copii, exclusivitate. Include: acces nelimitat toate activitățile, 2 animatori + facepainting + mascotă, decor premium, tort, candy bar, meniu copii, sesiune foto.</p></article>
+      <p>Un singur pachet, simplu și transparent — fără variante ascunse.</p>
+      ${section('Pachet disponibil', `
+        <article><h3>Pachet Petrecere — 80 lei / copil</h3><p>3 ore, minim 10 copii. Include: acces exclusiv la toate echipamentele, spațiu privat rezervat, animator dedicat pentru toată durata petrecerii, decor tematic.</p></article>
       `)}
     `,
   },
@@ -238,24 +236,25 @@ const routes = [
   {
     path: '/loc-de-joaca/tarife-program/',
     title: 'Program & Tarife Loc de joacă | Arena Play',
-    description: 'Programul complet al Locului de joacă Arena Play: weekend deschis fără rezervare, tarife pe oră și pachete, plus ofertele active.',
+    description: 'Programul complet al Locului de joacă Arena Play: weekend 30 lei/sesiune (20 min), 2+1 gratuit, sau acces exclusiv în timpul săptămânii cu rezervare.',
     breadcrumb: [{ label: 'Loc de joacă', href: '/loc-de-joaca/' }, { label: 'Program & Tarife', href: '/loc-de-joaca/tarife-program/' }],
     jsonLd: [breadcrumbSchema([{ label: 'Loc de joacă', href: '/loc-de-joaca/' }, { label: 'Program & Tarife', href: '/loc-de-joaca/tarife-program/' }])],
     body: `
       <h1>Program, tarife și oferte</h1>
       ${section('Program', `<p>Sâmbătă – Duminică: 13:30 – 21:30 · Luni – Vineri: doar cu rezervare</p>`)}
-      ${section('Tarife', `
+      ${section('Tarife — Weekend (acces liber, fără rezervare)', `
         <ul>
-          <li>Acces Loc de joacă — 45 lei / oră / copil</li>
-          <li>Pachet 2 ore — 79 lei / copil (economisești 11 lei)</li>
-          <li>Sesiune XR sau VR — 25 lei / sesiune</li>
-          <li>Simulator auto / zbor — 20 lei / sesiune</li>
-          <li>Abonament lunar — 299 lei / lună (acces nelimitat weekend)</li>
+          <li>Bilet acces — 30 lei / sesiune (o sesiune de joc durează 20 de minute)</li>
+        </ul>
+      `)}
+      ${section('Tarife — În timpul săptămânii (doar cu rezervare, acces exclusiv la toate echipamentele)', `
+        <ul>
+          <li>Petrecere — acces exclusiv — 80 lei / copil (minim 10 copii, 3 ore)</li>
+          <li>Loc de joacă — acces privat — 100 lei / copil (minim 4 copii, 2 ore, acces exclusiv la toate echipamentele)</li>
         </ul>
       `)}
       ${section('Oferte active', `
-        <p><strong>Reducere frați:</strong> 10% reducere pentru al doilea copil din aceeași familie, la aceeași rezervare.</p>
-        <p><strong>Grupuri organizate:</strong> tarif special pentru grupuri de minimum 10 copii, cu rezervare cu minimum 3 zile înainte.</p>
+        <p><strong>2 bilete cumpărate, al 3-lea gratuit:</strong> la achiziționarea a minimum 2 bilete de acces, al treilea bilet este gratuit. Valabil sâmbătă și duminică, 13:30–21:30, la achiziția pe loc.</p>
       `)}
     `,
   },
@@ -268,7 +267,7 @@ const routes = [
     body: `
       <h1>ARENA PLAY AFTERSCHOOL</h1>
       <p>După școală începe următorul nivel.</p>
-      <p>Clasele I–IV. Program zilnic 12:00 – 18:00, luni – vineri.</p>
+      <p>Clasele I–IV. Program zilnic 12:00 – 18:00, luni – vineri. Tarife — detalii la cerere.</p>
       ${section('Patru piloni ai programului', linkList([
         { href: '#', label: 'Teme & Organizare', desc: 'Timp dedicat, supravegheat, pentru teme și organizare.' },
         { href: '#', label: 'Engleză', desc: 'Sesiuni săptămânale de engleză conversațională.' },
@@ -323,7 +322,7 @@ const routes = [
     breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }],
     jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }])],
     body: `
-      <h1>ARENA XR</h1>
+      <h1>ARENA VR MOBILĂ</h1>
       <p>Noi aducem experiența la tine.</p>
       ${section('Cele trei trasee', linkList([
         { href: '/arena-vr-mobila/scoli/', label: 'Școli', desc: 'Activități educaționale itinerante, demonstrații XR și evenimente școlare tematice.' },

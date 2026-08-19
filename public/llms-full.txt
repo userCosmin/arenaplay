@@ -27,9 +27,9 @@ choose package → we confirm), gallery and FAQ. Primary CTA: "Rezervă petrecer
 "Vezi pachete" → /petreceri-vr/pachete/.
 
 ## Page: Pachete & Rezervare (/petreceri-vr/pachete/)
-Three packages compared side by side (Basic, Plus — featured, Premium), each with price,
-duration, kid count and included items, plus a booking form (name, phone, date, kid count,
-package, message). Submission is a request, not an automatic confirmation.
+A single package — 80 lei/copil, minim 10 copii, 3 ore, acces exclusiv la toate echipamentele —
+plus a booking form (name, phone, date, kid count, package, message). Submission is a request,
+not an automatic confirmation.
 
 ## Page: Loc de joacă (/loc-de-joaca/)
 Title: "LOC DE JOACĂ ARENA PLAY". Subtitle: "Intră în joc." Grid of 6 activities (XR zone, VR zone,
@@ -41,9 +41,11 @@ Monday–Friday by reservation only.
 Detail cards per activity: name, description, recommended age, player count, session duration.
 
 ## Page: Program & Tarife Loc de joacă (/loc-de-joaca/tarife-program/)
-Opening hours block first, then real-text pricing cards (hourly access, 2h package, XR/VR
-session, simulator session, monthly subscription), a temporary-offers module (sibling discount,
-group rates), and a reservation form (name, phone, date, time, people count).
+Opening hours block first, then two pricing groups: weekend walk-in access (30 lei/sesiune, o
+sesiune = 20 min) and weekday reservation-only exclusive access (petrecere 80 lei/copil, minim
+10 copii, 3 ore; acces privat 100 lei/copil, minim 4 copii, 2 ore). Active offer: 2 bilete
+cumpărate, al 3-lea gratuit (weekend only). Reservation form (name, phone, date, time, people
+count).
 
 ## Page: Afterschool (/afterschool/)
 Title: "ARENA PLAY AFTERSCHOOL". Subtitle: "După școală începe următorul nivel." For grades I–IV,
@@ -61,7 +63,7 @@ Right column: enrollment form (parent name, phone, email, child name, grade, sch
 This is a request of interest, not an automatic confirmation.
 
 ## Page: Arena VR mobilă (/arena-vr-mobila/)
-Title: "ARENA XR". Subtitle: "Noi aducem experiența la tine." A separate service from
+Title: "ARENA VR MOBILĂ". Subtitle: "Noi aducem experiența la tine." A separate service from
 the on-site Loc de joacă — Arena Play travels to the client. Three routes: Şcoli, Evenimente &
 Festivaluri, Petreceri / Evenimente private. No fixed prices (depends on location/duration/
 format) — CTA is always "Solicită ofertă". Four-step process: solicitare → configurare →

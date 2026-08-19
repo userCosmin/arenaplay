@@ -37,7 +37,7 @@ export default function ArenaMobilaPage() {
       />
       <PageHero
         eyebrow="Arena VR mobilă"
-        title="ARENA XR"
+        title="ARENA VR MOBILĂ"
         subtitle="Noi aducem experiența la tine."
         accent="arenamobila"
         breadcrumbs={[{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }]}
@@ -82,7 +82,7 @@ export default function ArenaMobilaPage() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           <div className="flex items-start gap-3">
             <ClipboardList className="mt-1 h-6 w-6 shrink-0 text-arenamobila-dark" aria-hidden="true" />
-            <p className="text-ink-600">Prețul depinde de locație, durată și format — de aceea folosim CTA „Solicită ofertă”.</p>
+            <p className="text-ink-600">Prețul depinde de locație, durată și format — detalii și tarife la cerere, prin CTA „Solicită ofertă”.</p>
           </div>
           <div className="flex items-start gap-3">
             <Wrench className="mt-1 h-6 w-6 shrink-0 text-arenamobila-dark" aria-hidden="true" />
