@@ -62,7 +62,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       <Link
                         to={item.href}
                         onClick={onClose}
-                        className={cn('py-3 text-base font-semibold', isActive ? 'text-brand-500' : 'text-ink-900')}
+                        className={cn('py-3 font-display text-base font-semibold', isActive ? 'text-brand-500' : 'text-ink-900')}
                       >
                         {item.label}
                       </Link>
@@ -90,7 +90,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                               key={child.href}
                               to={child.href}
                               onClick={onClose}
-                              className="block py-2.5 text-sm text-ink-600"
+                              className="block py-2.5 font-display text-sm text-ink-600"
                             >
                               {child.label}
                             </Link>
@@ -107,6 +107,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               <Button
                 variant="primary"
                 fullWidth
+                className="font-display"
                 onClick={() => {
                   onClose();
                   openBookingModal();

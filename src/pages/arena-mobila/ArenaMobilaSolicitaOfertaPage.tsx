@@ -7,8 +7,8 @@ import { ArenaMobilaRequestForm } from '@/components/forms/ArenaMobilaRequestFor
 
 export default function ArenaMobilaSolicitaOfertaPage() {
   const breadcrumbs = [
-    { label: 'Arena XR', href: '/arena-xr/' },
-    { label: 'Solicită Ofertă', href: '/arena-xr/solicita-oferta/' },
+    { label: 'Arena VR mobilă', href: '/arena-vr-mobila/' },
+    { label: 'Solicită Ofertă', href: '/arena-vr-mobila/solicita-oferta/' },
   ];
 
   const [searchParams] = useSearchParams();
@@ -18,9 +18,9 @@ export default function ArenaMobilaSolicitaOfertaPage() {
   return (
     <>
       <SEO
-        title="Solicită Ofertă Arena XR"
-        description="Completează formularul pentru a solicita o ofertă Arena XR — pentru școală, eveniment sau petrecere privată."
-        path="/arena-xr/solicita-oferta/"
+        title="Solicită Ofertă Arena VR mobilă"
+        description="Completează formularul pentru a solicita o ofertă Arena VR mobilă — pentru școală, eveniment sau petrecere privată."
+        path="/arena-vr-mobila/solicita-oferta/"
       />
       <PageHero
         eyebrow="Solicită Ofertă"

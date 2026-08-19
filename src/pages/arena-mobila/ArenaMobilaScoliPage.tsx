@@ -7,25 +7,25 @@ import { Button } from '@/components/ui/Button';
 
 export default function ArenaMobilaScoliPage() {
   const breadcrumbs = [
-    { label: 'Arena XR', href: '/arena-xr/' },
-    { label: 'Școli', href: '/arena-xr/scoli/' },
+    { label: 'Arena VR mobilă', href: '/arena-vr-mobila/' },
+    { label: 'Școli', href: '/arena-vr-mobila/scoli/' },
   ];
 
   return (
     <>
       <SEO
-        title="Arena XR pentru Școli & Educație"
+        title="Arena VR mobilă pentru Școli & Educație"
         description="Activități tematice, evenimente școlare și demonstrații XR aduse direct la școala ta. Organizare pe grupe și necesar logistic explicat clar."
-        path="/arena-xr/scoli/"
+        path="/arena-vr-mobila/scoli/"
       />
       <PageHero
         eyebrow="Școli & Educație"
-        title="Arena XR pentru școli"
+        title="Arena VR mobilă pentru școli"
         subtitle="Activități educaționale itinerante, adaptate contextului școlar."
         accent="arenamobila"
         breadcrumbs={breadcrumbs}
       >
-        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
+        <Button to="/arena-vr-mobila/solicita-oferta/" accent="arenamobila" size="lg">
           Solicită o activitate
         </Button>
       </PageHero>
@@ -41,14 +41,14 @@ export default function ArenaMobilaScoliPage() {
       />
 
       <Section className="bg-white">
-        <h2 className="mb-6 font-display text-display-md font-extrabold text-ink-900">Organizare pe grupe</h2>
+        <h2 className="mb-6 font-heading text-display-md font-extrabold text-ink-900">Organizare pe grupe</h2>
         <p className="max-w-2xl text-ink-600">
           Activitățile se organizează pe grupe, în funcție de spațiul disponibil și numărul de elevi. Înainte de solicitarea de
           ofertă, discutăm împreună necesarul de spațiu, timpul alocat și logistica de acces, pentru o desfășurare fără
           probleme.
         </p>
         <div className="mt-8">
-          <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
+          <Button to="/arena-vr-mobila/solicita-oferta/" accent="arenamobila" size="lg">
             Solicită detalii pentru școală
           </Button>
         </div>

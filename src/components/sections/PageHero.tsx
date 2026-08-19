@@ -58,7 +58,7 @@ export function PageHero({ eyebrow, title, subtitle, accent, breadcrumbs, childr
           <h1 className={cn('max-w-3xl text-balance font-display text-display-lg font-extrabold', isLight ? 'text-ink-900' : 'text-white')}>
             {title}
           </h1>
-          <p className={cn('mt-5 max-w-xl text-balance text-lg font-medium', isLight ? 'text-ink-600' : 'text-white/85')}>{subtitle}</p>
+          <p className={cn('mt-5 max-w-xl font-heading text-balance text-lg font-medium', isLight ? 'text-ink-600' : 'text-white/85')}>{subtitle}</p>
           {children && <div className="mt-8">{children}</div>}
         </motion.div>
       </Container>

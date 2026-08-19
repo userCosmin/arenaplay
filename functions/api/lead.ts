@@ -2,7 +2,7 @@
  * Cloudflare Pages Function — POST /api/lead
  *
  * Receives a submission from one of the five site forms (Petreceri, Loc de
- * joacă, Afterschool, Arena XR, Contact), does basic server-side validation
+ * joacă, Afterschool, Arena VR mobilă, Contact), does basic server-side validation
  * and spam-trapping, then emails a formatted summary via Resend
  * (https://resend.com) to the configured notification inbox.
  *
@@ -44,7 +44,7 @@ const typeLabels: Record<LeadType, string> = {
   petreceri: 'Petreceri — cerere de rezervare',
   playground: 'Loc de joacă — cerere de rezervare',
   afterschool: 'Afterschool — solicitare de înscriere',
-  'arena-mobila': 'Arena XR — solicitare de ofertă',
+  'arena-mobila': 'Arena VR mobilă — solicitare de ofertă',
   contact: 'Formular de contact',
 };
 

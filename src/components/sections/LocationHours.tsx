@@ -9,8 +9,8 @@ export function LocationHours() {
     <Section className="bg-ink-50">
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
         <div>
-          <h2 className="font-display text-display-md font-extrabold text-ink-900">Locație &amp; Program</h2>
-          <p className="mt-4 max-w-md text-ink-500">Te așteptăm în locația noastră sau venim noi la tine, prin Arena XR.</p>
+          <h2 className="font-heading text-display-md font-extrabold text-ink-900">Locație &amp; Program</h2>
+          <p className="mt-4 max-w-md text-ink-500">Te așteptăm în locația noastră sau venim noi la tine, prin Arena VR mobilă.</p>
 
           <div className="mt-8 flex flex-col gap-5">
             <div className="flex items-start gap-3">

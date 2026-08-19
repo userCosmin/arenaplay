@@ -27,11 +27,11 @@ export default function AfterschoolProgramPage() {
       />
 
       <Section className="bg-white">
-        <h2 className="mb-8 font-display text-display-md font-extrabold text-ink-900">Program zilnic</h2>
+        <h2 className="mb-8 font-heading text-display-md font-extrabold text-ink-900">Program zilnic</h2>
         <div className="mx-auto max-w-2xl divide-y divide-ink-100 rounded-3xl bg-afterschool-light/40 shadow-card">
           {dailySchedule.map((slot) => (
             <div key={slot.time} className="flex flex-col gap-1 px-6 py-5 sm:flex-row sm:items-center sm:gap-6">
-              <span className="w-40 shrink-0 font-display font-bold text-afterschool-dark">{slot.time}</span>
+              <span className="w-40 shrink-0 font-heading font-bold text-afterschool-dark">{slot.time}</span>
               <span className="text-ink-700">{slot.activity}</span>
             </div>
           ))}
@@ -39,11 +39,11 @@ export default function AfterschoolProgramPage() {
       </Section>
 
       <Section className="bg-ink-50">
-        <h2 className="mb-8 font-display text-display-md font-extrabold text-ink-900">Curriculum săptămânal</h2>
+        <h2 className="mb-8 font-heading text-display-md font-extrabold text-ink-900">Curriculum săptămânal</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {curriculumPillars.map((pillar) => (
             <Card key={pillar.id} hover>
-              <h3 className="font-display text-lg font-bold text-ink-900">{pillar.title}</h3>
+              <h3 className="font-heading text-lg font-bold text-ink-900">{pillar.title}</h3>
               <p className="mt-2 text-sm text-ink-500">{pillar.description}</p>
             </Card>
           ))}
@@ -51,11 +51,11 @@ export default function AfterschoolProgramPage() {
       </Section>
 
       <Section className="bg-white">
-        <h2 className="mb-8 font-display text-display-md font-extrabold text-ink-900">Opționale</h2>
+        <h2 className="mb-8 font-heading text-display-md font-extrabold text-ink-900">Opționale</h2>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {afterschoolOptionals.map((opt) => (
             <Card key={opt.id}>
-              <h3 className="font-display font-bold text-ink-900">{opt.label}</h3>
+              <h3 className="font-heading font-bold text-ink-900">{opt.label}</h3>
               <p className="mt-2 text-sm text-ink-500">{opt.description}</p>
             </Card>
           ))}

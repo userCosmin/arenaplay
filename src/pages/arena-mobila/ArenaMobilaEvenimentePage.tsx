@@ -8,16 +8,16 @@ import { Button } from '@/components/ui/Button';
 
 export default function ArenaMobilaEvenimentePage() {
   const breadcrumbs = [
-    { label: 'Arena XR', href: '/arena-xr/' },
-    { label: 'Evenimente & Festivaluri', href: '/arena-xr/evenimente/' },
+    { label: 'Arena VR mobilă', href: '/arena-vr-mobila/' },
+    { label: 'Evenimente & Festivaluri', href: '/arena-vr-mobila/evenimente/' },
   ];
 
   return (
     <>
       <SEO
-        title="Arena XR — Evenimente & Festivaluri"
-        description="Arena XR ca atracție interactivă la festivaluri, evenimente locale, evenimente de companie și activări de brand."
-        path="/arena-xr/evenimente/"
+        title="Arena VR mobilă — Evenimente & Festivaluri"
+        description="Arena VR mobilă ca atracție interactivă la festivaluri, evenimente locale, evenimente de companie și activări de brand."
+        path="/arena-vr-mobila/evenimente/"
       />
       <PageHero
         eyebrow="Evenimente & Festivaluri"
@@ -26,7 +26,7 @@ export default function ArenaMobilaEvenimentePage() {
         accent="arenamobila"
         breadcrumbs={breadcrumbs}
       >
-        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
+        <Button to="/arena-vr-mobila/solicita-oferta/" accent="arenamobila" size="lg">
           Solicită ofertă pentru eveniment
         </Button>
       </PageHero>
@@ -45,7 +45,7 @@ export default function ArenaMobilaEvenimentePage() {
 
       <Section className="bg-ink-50">
         <Card className="mx-auto max-w-2xl">
-          <h2 className="font-display text-xl font-bold text-ink-900">Ce ne trebuie pentru ofertare</h2>
+          <h2 className="font-heading text-xl font-bold text-ink-900">Ce ne trebuie pentru ofertare</h2>
           <p className="mt-3 text-ink-600">
             Pentru o ofertă corectă, avem nevoie de cel puțin: locația, data, durata estimată și numărul estimativ de
             participanți. Restul detaliilor le stabilim împreună.

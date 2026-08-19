@@ -57,7 +57,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Baloo 2"', '"Poppins"', 'system-ui', 'sans-serif'],
+        display: ['"Oxanium"', 'system-ui', 'sans-serif'],
+        heading: ['"Exo 2"', 'system-ui', 'sans-serif'],
         sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {

@@ -4,7 +4,7 @@ export const partners: Partner[] = [
   {
     id: 'p1',
     name: 'Şcoala Gimnazială Nr. 12',
-    description: 'Partener educațional pentru programul Afterschool și activități Arena XR.',
+    description: 'Partener educațional pentru programul Afterschool și activități Arena VR mobilă.',
     logo: '/images/partners/partner-1.webp',
   },
   {

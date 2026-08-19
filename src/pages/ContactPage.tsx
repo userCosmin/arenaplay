@@ -33,7 +33,7 @@ export default function ContactPage() {
             <Card className="flex items-start gap-4">
               <MapPin className="mt-1 h-6 w-6 shrink-0 text-brand-500" aria-hidden="true" />
               <div>
-                <h2 className="font-display font-bold text-ink-900">Adresă</h2>
+                <h2 className="font-heading font-bold text-ink-900">Adresă</h2>
                 <p className="mt-1 text-ink-600">{siteConfig.address.full}</p>
                 <Button
                   href={siteConfig.address.googleMapsUrl}
@@ -52,7 +52,7 @@ export default function ContactPage() {
             <Card className="flex items-start gap-4">
               <Clock className="mt-1 h-6 w-6 shrink-0 text-brand-500" aria-hidden="true" />
               <div>
-                <h2 className="font-display font-bold text-ink-900">Program</h2>
+                <h2 className="font-heading font-bold text-ink-900">Program</h2>
                 {siteConfig.openingHours.playground.map((entry) => (
                   <p key={entry.days} className="mt-1 text-ink-600">
                     {entry.days}: <span className="font-semibold text-ink-900">{entry.hours}</span>
@@ -65,7 +65,7 @@ export default function ContactPage() {
             <Card className="flex items-start gap-4">
               <Phone className="mt-1 h-6 w-6 shrink-0 text-brand-500" aria-hidden="true" />
               <div>
-                <h2 className="font-display font-bold text-ink-900">Telefon & WhatsApp</h2>
+                <h2 className="font-heading font-bold text-ink-900">Telefon & WhatsApp</h2>
                 <a href={telUrl()} onClick={() => trackEvent('phone_click', { source: 'contact_page' })} className="mt-1 block text-ink-600 hover:text-brand-600">
                   {siteConfig.contact.phoneDisplay}
                 </a>
@@ -84,7 +84,7 @@ export default function ContactPage() {
             <Card className="flex items-start gap-4">
               <Mail className="mt-1 h-6 w-6 shrink-0 text-brand-500" aria-hidden="true" />
               <div>
-                <h2 className="font-display font-bold text-ink-900">E-mail</h2>
+                <h2 className="font-heading font-bold text-ink-900">E-mail</h2>
                 <a href={mailUrl()} onClick={() => trackEvent('email_click', { source: 'contact_page' })} className="mt-1 block text-ink-600 hover:text-brand-600">
                   {siteConfig.contact.email}
                 </a>
@@ -105,7 +105,7 @@ export default function ContactPage() {
               />
             </div>
             <Card>
-              <h2 className="mb-5 font-display text-xl font-bold text-ink-900">Trimite-ne un mesaj</h2>
+              <h2 className="mb-5 font-heading text-xl font-bold text-ink-900">Trimite-ne un mesaj</h2>
               <ContactForm />
             </Card>
           </div>

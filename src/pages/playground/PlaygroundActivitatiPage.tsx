@@ -34,7 +34,7 @@ export default function PlaygroundActivitatiPage() {
               <Badge accent="playground" className="mb-4">
                 {activity.category}
               </Badge>
-              <h2 className="font-display text-xl font-bold text-ink-900">{activity.name}</h2>
+              <h2 className="font-heading text-xl font-bold text-ink-900">{activity.name}</h2>
               <p className="mt-2 text-ink-600">{activity.description}</p>
               <dl className="mt-4 grid grid-cols-3 gap-3 border-t border-ink-100 pt-4 text-sm">
                 <div>

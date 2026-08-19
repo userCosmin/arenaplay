@@ -35,7 +35,7 @@ export function MobileActionBar() {
         className="flex flex-1 flex-col items-center gap-0.5 bg-brand-500 py-2.5 text-white"
       >
         <CalendarCheck className="h-5 w-5" aria-hidden="true" />
-        <span className="text-[11px] font-semibold">Rezervă</span>
+        <span className="text-[11px] font-display font-semibold">Rezervă</span>
       </button>
     </div>
   );

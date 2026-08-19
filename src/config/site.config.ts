@@ -20,7 +20,7 @@ export const siteConfig = {
     legalName: 'Arena Play SRL',
     tagline: 'Distracție. Experiențe. Educație.',
     description:
-      'Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena XR — experiența Arena Play adusă la tine.',
+      'Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena VR mobilă — experiența Arena Play adusă la tine.',
     foundingYear: '2021',
   },
 
@@ -30,9 +30,9 @@ export const siteConfig = {
   },
 
   contact: {
-    phoneDisplay: '0768 491 858',
-    phoneE164: '+40768491858',
-    whatsappNumber: '40768491858',
+    phoneDisplay: '0737 105 105',
+    phoneE164: '+40737105105',
+    whatsappNumber: '40737105105',
     whatsappDefaultMessage: 'Bună! Aș vrea informații despre Arena Play.',
     email: 'contact@arenaplay.ro',
     reservationsEmail: 'rezervari@arenaplay.ro',

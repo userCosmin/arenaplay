@@ -15,7 +15,7 @@ export function Gallery({ category, title = 'Galerie' }: GalleryProps) {
 
   return (
     <Section className="bg-white">
-      <h2 className="mb-10 font-display text-display-md font-extrabold text-ink-900">{title}</h2>
+      <h2 className="mb-10 font-heading text-display-md font-extrabold text-ink-900">{title}</h2>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={16}

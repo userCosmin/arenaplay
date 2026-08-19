@@ -41,7 +41,7 @@ export function Header() {
               variant="primary"
               accent="brand"
               size="sm"
-              className="hidden sm:inline-flex"
+              className="hidden sm:inline-flex font-display"
               onClick={openBookingModal}
             >
               Rezervă

@@ -66,7 +66,7 @@ export function Modal({ isOpen, onClose, children, title, className }: ModalProp
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
-            {title && <h2 className="mb-4 pr-8 font-display text-2xl font-bold text-ink-900">{title}</h2>}
+            {title && <h2 className="mb-4 pr-8 font-heading text-2xl font-bold text-ink-900">{title}</h2>}
             {children}
           </motion.div>
         </motion.div>

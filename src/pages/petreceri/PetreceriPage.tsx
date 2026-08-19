@@ -13,20 +13,20 @@ export default function PetreceriPage() {
       <SEO
         title="Petreceri pentru copii"
         description="Tu aduci invitații, noi pregătim experiența. Petreceri tematice pentru copii, cu spațiu privat, animație și pachete complete la Arena Play."
-        path="/petreceri-copii/"
+        path="/petreceri-vr/"
       />
       <PageHero
         eyebrow="Petreceri pentru copii"
         title="PETRECERI PENTRU COPII"
         subtitle="Tu aduci invitații. Noi pregătim experiența."
         accent="petreceri"
-        breadcrumbs={[{ label: 'Petreceri', href: '/petreceri-copii/' }]}
+        breadcrumbs={[{ label: 'Petreceri VR', href: '/petreceri-vr/' }]}
       >
         <div className="flex flex-wrap gap-4">
-          <Button to="/petreceri-copii/pachete/" accent="petreceri" size="lg" icon={<PartyPopper className="h-5 w-5" />} iconPosition="left">
+          <Button to="/petreceri-vr/pachete/" accent="petreceri" size="lg" icon={<PartyPopper className="h-5 w-5" />} iconPosition="left">
             Rezervă petrecerea
           </Button>
-          <Button to="/petreceri-copii/pachete/" variant="outline" accent="ink" size="lg" className="!border-white !text-white hover:!bg-white/10">
+          <Button to="/petreceri-vr/pachete/" variant="outline" accent="ink" size="lg" className="!border-white !text-white hover:!bg-white/10">
             Vezi pachete
           </Button>
         </div>

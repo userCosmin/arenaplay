@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 export function Testimonials() {
   return (
     <Section className="bg-ink-950">
-      <h2 className="mb-10 text-center font-display text-display-md font-extrabold text-white">Ce spun părinții</h2>
+      <h2 className="mb-10 text-center font-heading text-display-md font-extrabold text-white">Ce spun părinții</h2>
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={24}

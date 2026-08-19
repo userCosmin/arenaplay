@@ -30,7 +30,7 @@ export function Accordion({ items, className }: AccordionProps) {
               aria-controls={`accordion-panel-${item.id}`}
               className="flex w-full items-center justify-between gap-4 px-5 sm:px-7 py-5 text-left"
             >
-              <span className="font-display font-semibold text-base sm:text-lg text-ink-900">{item.question}</span>
+              <span className="font-heading font-semibold text-base sm:text-lg text-ink-900">{item.question}</span>
               <ChevronDown
                 className={cn('h-5 w-5 shrink-0 text-ink-500 transition-transform duration-300', isOpen && 'rotate-180 text-brand-500')}
                 aria-hidden="true"

@@ -26,7 +26,7 @@ export function ServiceCards() {
   return (
     <Section id="servicii" className="bg-white">
       <div className="mb-12 max-w-2xl">
-        <h2 className="font-display text-display-md font-extrabold text-ink-900">Alege experiența Arena Play</h2>
+        <h2 className="font-heading text-display-md font-extrabold text-ink-900">Alege experiența Arena Play</h2>
         <p className="mt-4 text-lg text-ink-500">Patru trasee clare, pentru fiecare nevoie a familiei tale.</p>
       </div>
 
@@ -45,7 +45,7 @@ export function ServiceCards() {
               <span className={cn('mb-5 flex h-12 w-12 items-center justify-center rounded-2xl', iconColors[service.accent])}>
                 <Icon className="h-6 w-6" aria-hidden="true" />
               </span>
-              <h3 className="font-display text-xl font-bold text-ink-900">{service.shortLabel}</h3>
+              <h3 className="font-heading text-xl font-bold text-ink-900">{service.shortLabel}</h3>
               <p className="mt-1 text-sm font-semibold text-ink-500">{service.tagline}</p>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-600">{service.description}</p>
               <Button

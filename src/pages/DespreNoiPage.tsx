@@ -29,7 +29,7 @@ export default function DespreNoiPage() {
           </p>
           <p className="mt-4">
             Astăzi, Arena Play înseamnă patru experiențe complementare: petreceri memorabile, un loc de joacă plin de
-            tehnologie, un program afterschool de calitate și o Arena XR care aduce toată experiența direct la tine,
+            tehnologie, un program afterschool de calitate și o Arena VR mobilă care aduce toată experiența direct la tine,
             oriunde ai avea nevoie.
           </p>
         </div>

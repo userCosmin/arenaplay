@@ -48,7 +48,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-wide text-white">Linkuri rapide</h3>
+            <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-wide text-white">Linkuri rapide</h3>
             <ul className="flex flex-col gap-2.5">
               {footerQuickLinks.map((link) => (
                 <li key={link.href}>
@@ -61,7 +61,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-wide text-white">Contact</h3>
+            <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-wide text-white">Contact</h3>
             <ul className="flex flex-col gap-3 text-sm">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden="true" />
@@ -103,7 +103,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-sm font-bold uppercase tracking-wide text-white">Program</h3>
+            <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-wide text-white">Program</h3>
             <ul className="flex flex-col gap-2 text-sm">
               {siteConfig.openingHours.playground.map((entry) => (
                 <li key={entry.days} className="flex justify-between gap-4">

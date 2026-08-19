@@ -2,26 +2,26 @@
 
 > Arena Play este un centru de entertainment și educație pentru copii, cu patru servicii
 > principale: Petreceri pentru copii, Loc de joacă (XR/VR/simulatoare), Afterschool (clasele I-IV)
-> și Arena XR (serviciu itinerant pentru școli, evenimente și petreceri private).
+> și Arena VR mobilă (serviciu itinerant pentru școli, evenimente și petreceri private).
 
 Arena Play combină distracția cu educația într-o singură locație din Alba Iulia, oferind atât
 experiențe la sediu, cât și servicii mobile care se deplasează la client.
 
 ## Servicii
 
-- [Petreceri pentru copii](https://www.arenaplay.ro/petreceri-copii/): petreceri tematice cu spațiu privat, animație și pachete complete.
-- [Pachete & Rezervare Petreceri](https://www.arenaplay.ro/petreceri-copii/pachete/): comparație de pachete și formular de rezervare.
+- [Petreceri pentru copii](https://www.arenaplay.ro/petreceri-vr/): petreceri tematice cu spațiu privat, animație și pachete complete.
+- [Pachete & Rezervare Petreceri](https://www.arenaplay.ro/petreceri-vr/pachete/): comparație de pachete și formular de rezervare.
 - [Loc de joacă](https://www.arenaplay.ro/loc-de-joaca/): zonă de joacă tehnologică cu XR, VR, simulatoare auto/zbor și PlayStation.
 - [Activități Loc de joacă](https://www.arenaplay.ro/loc-de-joaca/activitati/): detalii despre fiecare activitate.
 - [Program & Tarife Loc de joacă](https://www.arenaplay.ro/loc-de-joaca/tarife-program/): orar de funcționare și prețuri.
 - [Afterschool](https://www.arenaplay.ro/afterschool/): program educațional pentru clasele I-IV, luni-vineri 12:00-18:00.
 - [Program & Curriculum Afterschool](https://www.arenaplay.ro/afterschool/program/): structura zilei și materiile predate.
 - [Înscrieri Afterschool](https://www.arenaplay.ro/afterschool/inscrieri/): formular de înscriere.
-- [Arena XR](https://www.arenaplay.ro/arena-xr/): serviciu itinerant pentru școli, evenimente și petreceri private.
-- [Arena XR — Școli](https://www.arenaplay.ro/arena-xr/scoli/): activități educaționale la școală.
-- [Arena XR — Evenimente & Festivaluri](https://www.arenaplay.ro/arena-xr/evenimente/): atracție interactivă pentru evenimente publice.
-- [Arena XR — Petreceri Private](https://www.arenaplay.ro/arena-xr/petreceri-private/): experiența Arena Play la locația clientului.
-- [Solicită Ofertă Arena XR](https://www.arenaplay.ro/arena-xr/solicita-oferta/): formular de solicitare ofertă.
+- [Arena VR mobilă](https://www.arenaplay.ro/arena-vr-mobila/): serviciu itinerant pentru școli, evenimente și petreceri private.
+- [Arena VR mobilă — Școli](https://www.arenaplay.ro/arena-vr-mobila/scoli/): activități educaționale la școală.
+- [Arena VR mobilă — Evenimente & Festivaluri](https://www.arenaplay.ro/arena-vr-mobila/evenimente/): atracție interactivă pentru evenimente publice.
+- [Arena VR mobilă — Petreceri Private](https://www.arenaplay.ro/arena-vr-mobila/petreceri-private/): experiența Arena Play la locația clientului.
+- [Solicită Ofertă Arena VR mobilă](https://www.arenaplay.ro/arena-vr-mobila/solicita-oferta/): formular de solicitare ofertă.
 
 ## Companie
 

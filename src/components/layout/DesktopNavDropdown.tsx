@@ -29,7 +29,7 @@ export function DesktopNavDropdown({ item, isScrolledStyle }: DesktopNavDropdown
       <Link
         to={item.href}
         className={cn(
-          'text-sm font-semibold transition-colors',
+          'font-display text-sm font-semibold transition-colors',
           isActive ? 'text-brand-500' : isScrolledStyle ? 'text-ink-700 hover:text-brand-500' : 'text-white hover:text-brand-200'
         )}
       >
@@ -43,7 +43,7 @@ export function DesktopNavDropdown({ item, isScrolledStyle }: DesktopNavDropdown
       <Link
         to={item.href}
         className={cn(
-          'flex items-center gap-1 text-sm font-semibold transition-colors',
+          'flex items-center gap-1 font-display text-sm font-semibold transition-colors',
           isActive ? 'text-brand-500' : isScrolledStyle ? 'text-ink-700 hover:text-brand-500' : 'text-white hover:text-brand-200'
         )}
         aria-expanded={open}
@@ -66,7 +66,7 @@ export function DesktopNavDropdown({ item, isScrolledStyle }: DesktopNavDropdown
                 to={child.href}
                 className="block rounded-xl px-4 py-3 transition-colors hover:bg-ink-50"
               >
-                <span className="block font-semibold text-ink-900">{child.label}</span>
+                <span className="block font-display font-semibold text-ink-900">{child.label}</span>
                 {child.description && <span className="block text-sm text-ink-500">{child.description}</span>}
               </Link>
             ))}

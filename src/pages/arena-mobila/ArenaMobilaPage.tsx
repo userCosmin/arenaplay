@@ -10,19 +10,19 @@ const routes = [
   {
     title: 'Școli',
     description: 'Activități educaționale itinerante, demonstrații XR și evenimente școlare tematice.',
-    href: '/arena-xr/scoli/',
+    href: '/arena-vr-mobila/scoli/',
     icon: School,
   },
   {
     title: 'Evenimente & Festivaluri',
     description: 'Atracție interactivă pentru evenimente cu flux mare de public: festivaluri, activări de brand.',
-    href: '/arena-xr/evenimente/',
+    href: '/arena-vr-mobila/evenimente/',
     icon: CalendarHeart,
   },
   {
     title: 'Petreceri Private',
     description: 'Aducem experiența Arena Play direct la locația ta, pentru petreceri și evenimente private.',
-    href: '/arena-xr/petreceri-private/',
+    href: '/arena-vr-mobila/petreceri-private/',
     icon: PartyPopper,
   },
 ];
@@ -31,24 +31,24 @@ export default function ArenaMobilaPage() {
   return (
     <>
       <SEO
-        title="Arena XR — Aducem experiența la tine"
-        description="Arena XR se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta."
-        path="/arena-xr/"
+        title="Arena VR mobilă — Aducem experiența la tine"
+        description="Arena VR mobilă se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta."
+        path="/arena-vr-mobila/"
       />
       <PageHero
-        eyebrow="Arena XR"
+        eyebrow="Arena VR mobilă"
         title="ARENA XR"
         subtitle="Noi aducem experiența la tine."
         accent="arenamobila"
-        breadcrumbs={[{ label: 'Arena XR', href: '/arena-xr/' }]}
+        breadcrumbs={[{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }]}
       >
-        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg" icon={<Truck className="h-5 w-5" />} iconPosition="left">
-          Solicită Arena XR
+        <Button to="/arena-vr-mobila/solicita-oferta/" accent="arenamobila" size="lg" icon={<Truck className="h-5 w-5" />} iconPosition="left">
+          Solicită Arena VR mobilă
         </Button>
       </PageHero>
 
       <Section className="bg-white">
-        <h2 className="mb-10 font-display text-display-md font-extrabold text-ink-900">Cele trei trasee</h2>
+        <h2 className="mb-10 font-heading text-display-md font-extrabold text-ink-900">Cele trei trasee</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {routes.map((route) => (
             <a
@@ -59,7 +59,7 @@ export default function ArenaMobilaPage() {
               <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-arenamobila text-white">
                 <route.icon className="h-6 w-6" aria-hidden="true" />
               </span>
-              <h3 className="font-display text-xl font-bold text-ink-900">{route.title}</h3>
+              <h3 className="font-heading text-xl font-bold text-ink-900">{route.title}</h3>
               <p className="mt-2 flex-1 text-sm text-ink-600">{route.description}</p>
               <span className="mt-4 text-sm font-semibold text-arenamobila-dark">Detalii →</span>
             </a>
@@ -95,7 +95,7 @@ export default function ArenaMobilaPage() {
         </div>
       </Section>
 
-      <Gallery category="arena-mobila" title="Galerie Arena XR" />
+      <Gallery category="arena-mobila" title="Galerie Arena VR mobilă" />
     </>
   );
 }

@@ -7,6 +7,6 @@ export const galleryImages: GalleryImage[] = [
   { id: 'g4', src: '/images/gallery/playground-2.webp', alt: 'Simulator auto de curse în zona de joacă', category: 'playground' },
   { id: 'g5', src: '/images/gallery/afterschool-1.webp', alt: 'Copii la teme în sala Afterschool', category: 'afterschool' },
   { id: 'g6', src: '/images/gallery/afterschool-2.webp', alt: 'Curs de engleză pentru copii la Afterschool', category: 'afterschool' },
-  { id: 'g7', src: '/images/gallery/arena-mobila-1.webp', alt: 'Arena XR instalată la un eveniment școlar', category: 'arena-mobila' },
-  { id: 'g8', src: '/images/gallery/arena-mobila-2.webp', alt: 'Arena XR la un festival cu public numeros', category: 'arena-mobila' },
+  { id: 'g7', src: '/images/gallery/arena-mobila-1.webp', alt: 'Arena VR mobilă instalată la un eveniment școlar', category: 'arena-mobila' },
+  { id: 'g8', src: '/images/gallery/arena-mobila-2.webp', alt: 'Arena VR mobilă la un festival cu public numeros', category: 'arena-mobila' },
 ];

@@ -36,7 +36,7 @@ export default function AfterschoolInscrieriPage() {
       <Section className="bg-white">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="mb-6 font-display text-2xl font-bold text-ink-900">Ce trebuie să știi</h2>
+            <h2 className="mb-6 font-heading text-2xl font-bold text-ink-900">Ce trebuie să știi</h2>
             <ul className="flex flex-col gap-4">
               {summaryPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3">

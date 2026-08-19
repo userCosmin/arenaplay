@@ -36,7 +36,7 @@ export default function AfterschoolPage() {
 
       <Section className="bg-white">
         <div className="mx-auto max-w-2xl rounded-3xl bg-afterschool-light p-8 text-center">
-          <p className="font-display text-2xl font-bold text-afterschool-dark">Clasele I–IV</p>
+          <p className="font-heading text-2xl font-bold text-afterschool-dark">Clasele I–IV</p>
           <p className="mt-2 text-lg text-ink-700">Program zilnic 12:00 – 18:00, luni – vineri</p>
         </div>
       </Section>

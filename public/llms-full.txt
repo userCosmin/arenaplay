@@ -11,22 +11,22 @@ brand, each with a distinct visual accent but shared identity:
 - Petreceri (parties) — pink/magenta
 - Loc de joacă — electric blue / navy
 - Afterschool — white / light blue
-- Arena XR (mobile unit) — teal / navy
+- Arena VR mobilă (mobile unit) — teal / navy
 
 ## Page: Acasă (/)
 Homepage routes visitors to one of four services immediately below the hero. Sections, in order:
-Hero ("DISTRACȚIE. EXPERIENȚE. EDUCAȚIE." — "Petreceri • Loc de joacă • Afterschool • Arena XR"),
+Hero ("DISTRACȚIE. EXPERIENȚE. EDUCAȚIE." — "Petreceri • Loc de joacă • Afterschool • Arena VR mobilă"),
 four service cards, "Ce cauți?" need-oriented repeat of the four routes, testimonials carousel,
 photo gallery, location + opening hours + Google Maps embed, FAQ accordion, and a final section
 with four distinct CTAs (one per service).
 
-## Page: Petreceri pentru copii (/petreceri-copii/)
+## Page: Petreceri pentru copii (/petreceri-vr/)
 Title: "PETRECERI PENTRU COPII". Subtitle: "Tu aduci invitații. Noi pregătim experiența."
 Explains what's included (private space, activities, animator), a 3-step process (choose date →
 choose package → we confirm), gallery and FAQ. Primary CTA: "Rezervă petrecerea". Secondary:
-"Vezi pachete" → /petreceri-copii/pachete/.
+"Vezi pachete" → /petreceri-vr/pachete/.
 
-## Page: Pachete & Rezervare (/petreceri-copii/pachete/)
+## Page: Pachete & Rezervare (/petreceri-vr/pachete/)
 Three packages compared side by side (Basic, Plus — featured, Premium), each with price,
 duration, kid count and included items, plus a booking form (name, phone, date, kid count,
 package, message). Submission is a request, not an automatic confirmation.
@@ -60,28 +60,28 @@ Left column: what to know (schedule, limited spots per group, next steps after s
 Right column: enrollment form (parent name, phone, email, child name, grade, school, message).
 This is a request of interest, not an automatic confirmation.
 
-## Page: Arena XR (/arena-xr/)
+## Page: Arena VR mobilă (/arena-vr-mobila/)
 Title: "ARENA XR". Subtitle: "Noi aducem experiența la tine." A separate service from
 the on-site Loc de joacă — Arena Play travels to the client. Three routes: Şcoli, Evenimente &
 Festivaluri, Petreceri / Evenimente private. No fixed prices (depends on location/duration/
 format) — CTA is always "Solicită ofertă". Four-step process: solicitare → configurare →
 transport & instalare → coordonare.
 
-## Page: Arena XR — Școli (/arena-xr/scoli/)
+## Page: Arena VR mobilă — Școli (/arena-vr-mobila/scoli/)
 Educational, less commercial tone. Use cases: themed activities, school events, XR
 demonstrations. Explains group organization and space requirements before requesting a quote.
 
-## Page: Arena XR — Evenimente & Festivaluri (/arena-xr/evenimente/)
-Positions Arena XR as an interactive attraction for high-footfall events: festivals, local
+## Page: Arena VR mobilă — Evenimente & Festivaluri (/arena-vr-mobila/evenimente/)
+Positions Arena VR mobilă as an interactive attraction for high-footfall events: festivals, local
 events, corporate events, brand activations. Quote requests need at minimum: location, date,
 duration, estimated attendance.
 
-## Page: Arena XR — Petreceri Private (/arena-xr/petreceri-private/)
+## Page: Arena VR mobilă — Petreceri Private (/arena-vr-mobila/petreceri-private/)
 Answers "can Arena Play come to my location?" Separates on-site parties from the mobile
 experience. Collects address, space, access, duration, attendees before quoting. Custom pricing,
 not a fixed package list. Installation is not guaranteed until logistics are verified.
 
-## Page: Solicită Ofertă Arena XR (/arena-xr/solicita-oferta/)
+## Page: Solicită Ofertă Arena VR mobilă (/arena-vr-mobila/solicita-oferta/)
 Segmented request form — first field is request type: școală / eveniment / privat. Fields:
 name/organization, phone, email, locality, location, date, participants, message. This
 generates a distinct Analytics conversion from the other three service forms. Submission is not
@@ -97,7 +97,7 @@ harta" button; short contact form (name, phone, email, subject, message). Phone 
 tap-to-call / tap-to-chat on mobile. Hours must match the Loc de joacă page exactly.
 
 ## Page: Rezervă acum (/rezerva/)
-A single selector with four large options (Petrecere, Loc de joacă, Afterschool, Arena XR)
+A single selector with four large options (Petrecere, Loc de joacă, Afterschool, Arena VR mobilă)
 that routes to the matching service-specific form. Also available as a global modal from the
 "Rezervă" button in the header and mobile action bar.
 

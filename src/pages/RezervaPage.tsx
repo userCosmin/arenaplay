@@ -8,7 +8,7 @@ export default function RezervaPage() {
     <>
       <SEO
         title="Rezervă acum"
-        description="Alege serviciul Arena Play pe care vrei să îl rezervi: Petrecere, Loc de joacă, Afterschool sau Arena XR."
+        description="Alege serviciul Arena Play pe care vrei să îl rezervi: Petrecere, Loc de joacă, Afterschool sau Arena VR mobilă."
         path="/rezerva/"
       />
       <PageHero

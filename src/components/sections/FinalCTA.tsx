@@ -3,10 +3,10 @@ import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 
 const ctas = [
-  { label: 'Rezervă petrecere', href: '/petreceri-copii/pachete/', icon: PartyPopper, accent: 'petreceri' as const },
   { label: 'Rezervă Loc de joacă', href: '/loc-de-joaca/tarife-program/', icon: Gamepad2, accent: 'playground' as const },
+  { label: 'Rezervă petrecere', href: '/petreceri-vr/pachete/', icon: PartyPopper, accent: 'petreceri' as const },
+  { label: 'Solicită Arena VR mobilă', href: '/arena-vr-mobila/solicita-oferta/', icon: Truck, accent: 'arenamobila' as const },
   { label: 'Solicită informații Afterschool', href: '/afterschool/inscrieri/', icon: GraduationCap, accent: 'afterschool' as const },
-  { label: 'Solicită Arena XR', href: '/arena-xr/solicita-oferta/', icon: Truck, accent: 'arenamobila' as const },
 ];
 
 /** Homepage closing section — four distinct, service-specific CTAs. */
@@ -14,7 +14,7 @@ export function FinalCTA() {
   return (
     <Section className="bg-gradient-to-br from-ink-950 to-ink-900">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="font-display text-display-md font-extrabold text-white">Gata să începem?</h2>
+        <h2 className="font-heading text-display-md font-extrabold text-white">Gata să începem?</h2>
         <p className="mt-4 text-lg text-white/70">Alege traseul potrivit familiei tale — durează mai puțin de un minut.</p>
       </div>
       <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">

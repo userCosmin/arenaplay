@@ -31,7 +31,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: 'faq-5',
-    question: 'Arena XR vine în orice localitate?',
+    question: 'Arena VR mobilă vine în orice localitate?',
     answer:
       'Ne deplasăm în Alba Iulia și în majoritatea localităților din apropiere. Pentru distanțe mai mari, te rugăm să ne contactezi pentru a verifica disponibilitatea și costurile de transport.',
     category: 'arena-mobila',

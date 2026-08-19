@@ -14,15 +14,6 @@ interface SelectorOption {
 
 const options: SelectorOption[] = [
   {
-    slug: 'petreceri',
-    label: 'Petrecere',
-    description: 'Rezervă o petrecere de aniversare pentru copilul tău.',
-    href: '/petreceri-copii/pachete/',
-    icon: PartyPopper,
-    accentBg: 'bg-petreceri/10',
-    accentText: 'text-petreceri-dark',
-  },
-  {
     slug: 'playground',
     label: 'Loc de joacă',
     description: 'Rezervă acces sau un interval orar la Locul de joacă.',
@@ -32,6 +23,24 @@ const options: SelectorOption[] = [
     accentText: 'text-playground-dark',
   },
   {
+    slug: 'petreceri',
+    label: 'Petrecere',
+    description: 'Rezervă o petrecere de aniversare pentru copilul tău.',
+    href: '/petreceri-vr/pachete/',
+    icon: PartyPopper,
+    accentBg: 'bg-petreceri/10',
+    accentText: 'text-petreceri-dark',
+  },
+  {
+    slug: 'arena-mobila',
+    label: 'Arena VR mobilă',
+    description: 'Solicită o ofertă pentru școală, eveniment sau petrecere privată.',
+    href: '/arena-vr-mobila/solicita-oferta/',
+    icon: Truck,
+    accentBg: 'bg-arenamobila/10',
+    accentText: 'text-arenamobila-dark',
+  },
+  {
     slug: 'afterschool',
     label: 'Afterschool',
     description: 'Solicită informații și înscrie copilul la Afterschool.',
@@ -39,15 +48,6 @@ const options: SelectorOption[] = [
     icon: GraduationCap,
     accentBg: 'bg-afterschool/10',
     accentText: 'text-afterschool-dark',
-  },
-  {
-    slug: 'arena-mobila',
-    label: 'Arena XR',
-    description: 'Solicită o ofertă pentru școală, eveniment sau petrecere privată.',
-    href: '/arena-xr/solicita-oferta/',
-    icon: Truck,
-    accentBg: 'bg-arenamobila/10',
-    accentText: 'text-arenamobila-dark',
   },
 ];
 
@@ -72,7 +72,7 @@ export function BookingSelector({ onNavigate, className }: BookingSelectorProps)
             <span className={cn('flex h-12 w-12 items-center justify-center rounded-2xl', option.accentBg, option.accentText)}>
               <Icon className="h-6 w-6" aria-hidden="true" />
             </span>
-            <span className="font-display text-lg font-bold text-ink-900">{option.label}</span>
+            <span className="font-heading text-lg font-bold text-ink-900">{option.label}</span>
             <span className="text-sm text-ink-500">{option.description}</span>
             <span className={cn('mt-1 flex items-center gap-1 text-sm font-semibold', option.accentText)}>
               Continuă <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />

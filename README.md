@@ -1,7 +1,7 @@
 # Arena Play — Official Website
 
 Enterprise-grade, production-ready marketing site for **Arena Play**: Petreceri pentru copii,
-Loc de joacă, Afterschool și Arena XR. Built with React 19, TypeScript and Vite, and deployed
+Loc de joacă, Afterschool și Arena VR mobilă. Built with React 19, TypeScript and Vite, and deployed
 as a static site on Cloudflare Pages.
 
 ## Tech stack
@@ -67,7 +67,7 @@ src/
     ui/          Reusable primitives (Button, Card, Modal, Accordion, form fields, ...)
     layout/       Header, Footer, mobile menu/action bar, floating WhatsApp button, Layout
     sections/     Page sections shared across routes (Hero, ServiceCards, FAQSection, ...)
-    forms/        One RHF+Zod form per service (Petreceri, Loc de joacă, Afterschool, Arena XR, Contact)
+    forms/        One RHF+Zod form per service (Petreceri, Loc de joacă, Afterschool, Arena VR mobilă, Contact)
     seo/           <SEO> (Helmet) and <JsonLd> structured-data helpers
   pages/           One file per route, grouped by service folder
   data/            CMS-ready content (see table above)
@@ -88,11 +88,11 @@ Homepage plus 17 routes, matching the approved site architecture exactly:
 
 ```
 /
-/petreceri-copii/            /petreceri-copii/pachete/
+/petreceri-vr/            /petreceri-vr/pachete/
 /loc-de-joaca/                /loc-de-joaca/activitati/       /loc-de-joaca/tarife-program/
 /afterschool/                /afterschool/program/           /afterschool/inscrieri/
-/arena-xr/                    /arena-xr/scoli/                /arena-xr/evenimente/
-/arena-xr/petreceri-private/   /arena-xr/solicita-oferta/
+/arena-vr-mobila/                    /arena-vr-mobila/scoli/                /arena-vr-mobila/evenimente/
+/arena-vr-mobila/petreceri-private/   /arena-vr-mobila/solicita-oferta/
 /despre-noi/                  /contact/                       /rezerva/
 ```
 

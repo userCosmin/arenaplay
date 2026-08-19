@@ -7,16 +7,16 @@ import { Button } from '@/components/ui/Button';
 
 export default function ArenaMobilaPetreceriPrivatePage() {
   const breadcrumbs = [
-    { label: 'Arena XR', href: '/arena-xr/' },
-    { label: 'Petreceri Private', href: '/arena-xr/petreceri-private/' },
+    { label: 'Arena VR mobilă', href: '/arena-vr-mobila/' },
+    { label: 'Petreceri Private', href: '/arena-vr-mobila/petreceri-private/' },
   ];
 
   return (
     <>
       <SEO
-        title="Arena XR — Petreceri & Evenimente Private"
-        description="Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena XR."
-        path="/arena-xr/petreceri-private/"
+        title="Arena VR mobilă — Petreceri & Evenimente Private"
+        description="Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena VR mobilă."
+        path="/arena-vr-mobila/petreceri-private/"
       />
       <PageHero
         eyebrow="Petreceri & Evenimente Private"
@@ -25,8 +25,8 @@ export default function ArenaMobilaPetreceriPrivatePage() {
         accent="arenamobila"
         breadcrumbs={breadcrumbs}
       >
-        <Button to="/arena-xr/solicita-oferta/" accent="arenamobila" size="lg">
-          Solicită Arena XR la locația ta
+        <Button to="/arena-vr-mobila/solicita-oferta/" accent="arenamobila" size="lg">
+          Solicită Arena VR mobilă la locația ta
         </Button>
       </PageHero>
 
@@ -35,7 +35,7 @@ export default function ArenaMobilaPetreceriPrivatePage() {
           <p className="font-semibold text-arenamobila-dark">
             Separăm clar petrecerile organizate la sediul Arena Play de experiența mobilă la locația clientului — dacă preferi
             sediul nostru, vezi și{' '}
-            <a href="/petreceri-copii/" className="underline">
+            <a href="/petreceri-vr/" className="underline">
               pagina de Petreceri
             </a>
             .

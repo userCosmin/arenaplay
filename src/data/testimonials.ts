@@ -32,7 +32,7 @@ export const testimonials: Testimonial[] = [
     name: 'Şcoala Gimnazială Nr. 12',
     role: 'Coordonator activități extracurriculare',
     service: 'arena-mobila',
-    quote: 'Arena XR a transformat ziua școlii într-un eveniment memorabil. Organizare impecabilă și copii încântați.',
+    quote: 'Arena VR mobilă a transformat ziua școlii într-un eveniment memorabil. Organizare impecabilă și copii încântați.',
     rating: 5,
   },
   {

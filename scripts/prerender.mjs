@@ -33,8 +33,8 @@ const siteUrl = 'https://www.arenaplay.ro';
 const site = {
   name: 'Arena Play',
   legalName: 'Arena Play SRL',
-  phone: '+40768491858',
-  phoneDisplay: '0768 491 858',
+  phone: '+40737105105',
+  phoneDisplay: '0737 105 105',
   email: 'contact@arenaplay.ro',
   address: {
     streetAddress: 'Str. Tudor Vladimirescu nr. 50A',
@@ -139,29 +139,29 @@ const generalFaq = [
 const routes = [
   {
     path: '/',
-    title: 'Arena Play — Petreceri, Loc de joacă, Afterschool & Arena XR',
-    description: 'Distracție, experiențe și educație într-un singur loc: petreceri pentru copii, loc de joacă cu XR/VR, afterschool și Arena XR adusă la tine.',
+    title: 'Arena Play — Petreceri, Loc de joacă, Afterschool & Arena VR mobilă',
+    description: 'Distracție, experiențe și educație într-un singur loc: petreceri pentru copii, loc de joacă cu XR/VR, afterschool și Arena VR mobilă adusă la tine.',
     jsonLd: [localBusinessSchema(), faqSchema(generalFaq)],
     body: `
       <h1>DISTRACȚIE. EXPERIENȚE. EDUCAȚIE.</h1>
-      <p>Petreceri • Loc de joacă • Afterschool • Arena XR</p>
-      <p>Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena XR — experiența Arena Play adusă la tine.</p>
+      <p>Petreceri • Loc de joacă • Afterschool • Arena VR mobilă</p>
+      <p>Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena VR mobilă — experiența Arena Play adusă la tine.</p>
       ${section('Alege experiența Arena Play', linkList([
-        { href: '/petreceri-copii/', label: 'Petreceri pentru copii', desc: 'Tu aduci invitații. Noi pregătim experiența.' },
+        { href: '/petreceri-vr/', label: 'Petreceri pentru copii', desc: 'Tu aduci invitații. Noi pregătim experiența.' },
         { href: '/loc-de-joaca/', label: 'Loc de joacă Arena Play', desc: 'Intră în joc.' },
         { href: '/afterschool/', label: 'Arena Play Afterschool', desc: 'După școală începe următorul nivel.' },
-        { href: '/arena-xr/', label: 'Arena XR', desc: 'Noi aducem experiența la tine.' },
+        { href: '/arena-vr-mobila/', label: 'Arena VR mobilă', desc: 'Noi aducem experiența la tine.' },
       ]))}
       ${section('Locație & Program', `<p>${esc(site.address.streetAddress)}, ${esc(site.address.locality)}, ${esc(site.address.postalCode)}, România</p><p>Telefon: ${esc(site.phoneDisplay)}</p><p>Sâmbătă – Duminică: 13:30 – 21:30 · Luni – Vineri: doar cu rezervare</p>`)}
       ${section('Întrebări frecvente', faqHtml(generalFaq))}
     `,
   },
   {
-    path: '/petreceri-copii/',
+    path: '/petreceri-vr/',
     title: 'Petreceri pentru copii | Arena Play',
     description: 'Tu aduci invitații, noi pregătim experiența. Petreceri tematice pentru copii, cu spațiu privat, animație și pachete complete la Arena Play.',
-    breadcrumb: [{ label: 'Petreceri', href: '/petreceri-copii/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Petreceri', href: '/petreceri-copii/' }]), faqSchema(generalFaq)],
+    breadcrumb: [{ label: 'Petreceri VR', href: '/petreceri-vr/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Petreceri VR', href: '/petreceri-vr/' }]), faqSchema(generalFaq)],
     body: `
       <h1>PETRECERI PENTRU COPII</h1>
       <p>Tu aduci invitații. Noi pregătim experiența.</p>
@@ -176,15 +176,15 @@ const routes = [
         { href: '#', label: '2. Alegi pachetul', desc: 'Selectezi pachetul potrivit numărului de copii și bugetului.' },
         { href: '#', label: '3. Confirmăm', desc: 'Echipa noastră te contactează pentru a confirma toate detaliile.' },
       ]))}
-      ${section('Pachete', linkList([{ href: '/petreceri-copii/pachete/', label: 'Vezi pachete și rezervă', desc: 'Basic, Plus și Premium — preț, durată și ce este inclus' }]))}
+      ${section('Pachete', linkList([{ href: '/petreceri-vr/pachete/', label: 'Vezi pachete și rezervă', desc: 'Basic, Plus și Premium — preț, durată și ce este inclus' }]))}
     `,
   },
   {
-    path: '/petreceri-copii/pachete/',
+    path: '/petreceri-vr/pachete/',
     title: 'Pachete Petreceri & Rezervare | Arena Play',
     description: 'Compară cele trei pachete de petreceri Arena Play — preț, durată, număr de copii și ce este inclus — și rezervă direct online.',
-    breadcrumb: [{ label: 'Petreceri', href: '/petreceri-copii/' }, { label: 'Pachete & Rezervare', href: '/petreceri-copii/pachete/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Petreceri', href: '/petreceri-copii/' }, { label: 'Pachete & Rezervare', href: '/petreceri-copii/pachete/' }])],
+    breadcrumb: [{ label: 'Petreceri VR', href: '/petreceri-vr/' }, { label: 'Pachete & Rezervare', href: '/petreceri-vr/pachete/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Petreceri VR', href: '/petreceri-vr/' }, { label: 'Pachete & Rezervare', href: '/petreceri-vr/pachete/' }])],
     body: `
       <h1>Alege pachetul potrivit</h1>
       <p>Preț, durată, număr de copii și ce este inclus — totul vizibil, fără pop-up.</p>
@@ -317,31 +317,31 @@ const routes = [
     `,
   },
   {
-    path: '/arena-xr/',
-    title: 'Arena XR — Aducem experiența la tine | Arena Play',
-    description: 'Arena XR se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta.',
-    breadcrumb: [{ label: 'Arena XR', href: '/arena-xr/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Arena XR', href: '/arena-xr/' }])],
+    path: '/arena-vr-mobila/',
+    title: 'Arena VR mobilă — Aducem experiența la tine | Arena Play',
+    description: 'Arena VR mobilă se deplasează la școli, evenimente, festivaluri și petreceri private. Solicită o ofertă personalizată pentru locația ta.',
+    breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }])],
     body: `
       <h1>ARENA XR</h1>
       <p>Noi aducem experiența la tine.</p>
       ${section('Cele trei trasee', linkList([
-        { href: '/arena-xr/scoli/', label: 'Școli', desc: 'Activități educaționale itinerante, demonstrații XR și evenimente școlare tematice.' },
-        { href: '/arena-xr/evenimente/', label: 'Evenimente & Festivaluri', desc: 'Atracție interactivă pentru evenimente cu flux mare de public.' },
-        { href: '/arena-xr/petreceri-private/', label: 'Petreceri Private', desc: 'Aducem experiența Arena Play direct la locația ta.' },
+        { href: '/arena-vr-mobila/scoli/', label: 'Școli', desc: 'Activități educaționale itinerante, demonstrații XR și evenimente școlare tematice.' },
+        { href: '/arena-vr-mobila/evenimente/', label: 'Evenimente & Festivaluri', desc: 'Atracție interactivă pentru evenimente cu flux mare de public.' },
+        { href: '/arena-vr-mobila/petreceri-private/', label: 'Petreceri Private', desc: 'Aducem experiența Arena Play direct la locația ta.' },
       ]))}
       ${section('Cum funcționează', `<p>Solicitare → Configurare → Transport & instalare → Coordonare.</p>`)}
-      ${section('Solicită ofertă', linkList([{ href: '/arena-xr/solicita-oferta/', label: 'Solicită Arena XR' }]))}
+      ${section('Solicită ofertă', linkList([{ href: '/arena-vr-mobila/solicita-oferta/', label: 'Solicită Arena VR mobilă' }]))}
     `,
   },
   {
-    path: '/arena-xr/scoli/',
-    title: 'Arena XR pentru Școli & Educație | Arena Play',
+    path: '/arena-vr-mobila/scoli/',
+    title: 'Arena VR mobilă pentru Școli & Educație | Arena Play',
     description: 'Activități tematice, evenimente școlare și demonstrații XR aduse direct la școala ta. Organizare pe grupe și necesar logistic explicat clar.',
-    breadcrumb: [{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Școli', href: '/arena-xr/scoli/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Școli', href: '/arena-xr/scoli/' }])],
+    breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Școli', href: '/arena-vr-mobila/scoli/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Școli', href: '/arena-vr-mobila/scoli/' }])],
     body: `
-      <h1>Arena XR pentru școli</h1>
+      <h1>Arena VR mobilă pentru școli</h1>
       <p>Activități educaționale itinerante, adaptate contextului școlar.</p>
       ${section('Exemple de utilizare', linkList([
         { href: '#', label: 'Activități tematice', desc: 'Sesiuni adaptate curriculumului sau unei teme educaționale specifice.' },
@@ -351,11 +351,11 @@ const routes = [
     `,
   },
   {
-    path: '/arena-xr/evenimente/',
-    title: 'Arena XR — Evenimente & Festivaluri | Arena Play',
-    description: 'Arena XR ca atracție interactivă la festivaluri, evenimente locale, evenimente de companie și activări de brand.',
-    breadcrumb: [{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Evenimente & Festivaluri', href: '/arena-xr/evenimente/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Evenimente & Festivaluri', href: '/arena-xr/evenimente/' }])],
+    path: '/arena-vr-mobila/evenimente/',
+    title: 'Arena VR mobilă — Evenimente & Festivaluri | Arena Play',
+    description: 'Arena VR mobilă ca atracție interactivă la festivaluri, evenimente locale, evenimente de companie și activări de brand.',
+    breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Evenimente & Festivaluri', href: '/arena-vr-mobila/evenimente/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Evenimente & Festivaluri', href: '/arena-vr-mobila/evenimente/' }])],
     body: `
       <h1>O atracție interactivă pentru evenimentul tău</h1>
       ${section('Segmente potrivite', linkList([
@@ -367,11 +367,11 @@ const routes = [
     `,
   },
   {
-    path: '/arena-xr/petreceri-private/',
-    title: 'Arena XR — Petreceri & Evenimente Private | Arena Play',
-    description: 'Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena XR.',
-    breadcrumb: [{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Petreceri Private', href: '/arena-xr/petreceri-private/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Petreceri Private', href: '/arena-xr/petreceri-private/' }])],
+    path: '/arena-vr-mobila/petreceri-private/',
+    title: 'Arena VR mobilă — Petreceri & Evenimente Private | Arena Play',
+    description: 'Poate Arena Play să vină la locația ta? Da — află condițiile de bază pentru petreceri și evenimente private cu Arena VR mobilă.',
+    breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Petreceri Private', href: '/arena-vr-mobila/petreceri-private/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Petreceri Private', href: '/arena-vr-mobila/petreceri-private/' }])],
     body: `
       <h1>Poate Arena Play să vină la locația mea?</h1>
       <p>Da — după verificarea condițiilor logistice, aducem experiența direct la tine.</p>
@@ -383,11 +383,11 @@ const routes = [
     `,
   },
   {
-    path: '/arena-xr/solicita-oferta/',
-    title: 'Solicită Ofertă Arena XR | Arena Play',
-    description: 'Completează formularul pentru a solicita o ofertă Arena XR — pentru școală, eveniment sau petrecere privată.',
-    breadcrumb: [{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Solicită Ofertă', href: '/arena-xr/solicita-oferta/' }],
-    jsonLd: [breadcrumbSchema([{ label: 'Arena XR', href: '/arena-xr/' }, { label: 'Solicită Ofertă', href: '/arena-xr/solicita-oferta/' }])],
+    path: '/arena-vr-mobila/solicita-oferta/',
+    title: 'Solicită Ofertă Arena VR mobilă | Arena Play',
+    description: 'Completează formularul pentru a solicita o ofertă Arena VR mobilă — pentru școală, eveniment sau petrecere privată.',
+    breadcrumb: [{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Solicită Ofertă', href: '/arena-vr-mobila/solicita-oferta/' }],
+    jsonLd: [breadcrumbSchema([{ label: 'Arena VR mobilă', href: '/arena-vr-mobila/' }, { label: 'Solicită Ofertă', href: '/arena-vr-mobila/solicita-oferta/' }])],
     body: `
       <h1>Spune-ne despre evenimentul tău</h1>
       <p>Formular rapid — suficient pentru a califica cererea, fără informații inutile. Alege tipul solicitării: școală, eveniment sau petrecere privată.</p>
@@ -403,7 +403,7 @@ const routes = [
       <h1>Distracție și educație, sub același acoperiș</h1>
       <p>Arena Play este locul unde copiii se joacă, învață și cresc — iar părinții au liniște.</p>
       <p>Arena Play s-a născut din dorința de a oferi copiilor un spațiu unde distracția și educația nu se exclud, ci se completează. Combinăm tehnologie modernă — XR, VR, simulatoare — cu activități educaționale structurate, într-un mediu sigur și prietenos.</p>
-      <p>Astăzi, Arena Play înseamnă patru experiențe complementare: petreceri memorabile, un loc de joacă plin de tehnologie, un program afterschool de calitate și o Arena XR care aduce toată experiența direct la tine.</p>
+      <p>Astăzi, Arena Play înseamnă patru experiențe complementare: petreceri memorabile, un loc de joacă plin de tehnologie, un program afterschool de calitate și o Arena VR mobilă care aduce toată experiența direct la tine.</p>
     `,
   },
   {
@@ -424,17 +424,17 @@ const routes = [
   {
     path: '/rezerva/',
     title: 'Rezervă acum | Arena Play',
-    description: 'Alege serviciul Arena Play pe care vrei să îl rezervi: Petrecere, Loc de joacă, Afterschool sau Arena XR.',
+    description: 'Alege serviciul Arena Play pe care vrei să îl rezervi: Petrecere, Loc de joacă, Afterschool sau Arena VR mobilă.',
     breadcrumb: [{ label: 'Rezervă acum', href: '/rezerva/' }],
     jsonLd: [breadcrumbSchema([{ label: 'Rezervă acum', href: '/rezerva/' }])],
     body: `
       <h1>REZERVĂ ACUM</h1>
       <p>Alege serviciul și continuă în mai puțin de un minut.</p>
       ${linkList([
-        { href: '/petreceri-copii/pachete/', label: 'Petrecere', desc: 'Rezervă o petrecere de aniversare pentru copilul tău.' },
+        { href: '/petreceri-vr/pachete/', label: 'Petrecere', desc: 'Rezervă o petrecere de aniversare pentru copilul tău.' },
         { href: '/loc-de-joaca/tarife-program/', label: 'Loc de joacă', desc: 'Rezervă acces sau un interval orar la Locul de joacă.' },
         { href: '/afterschool/inscrieri/', label: 'Afterschool', desc: 'Solicită informații și înscrie copilul la Afterschool.' },
-        { href: '/arena-xr/solicita-oferta/', label: 'Arena XR', desc: 'Solicită o ofertă pentru școală, eveniment sau petrecere privată.' },
+        { href: '/arena-vr-mobila/solicita-oferta/', label: 'Arena VR mobilă', desc: 'Solicită o ofertă pentru școală, eveniment sau petrecere privată.' },
       ])}
     `,
   },
