@@ -6,10 +6,14 @@ export interface NavChild {
   description?: string;
 }
 
+/** Small color indicator dot shown next to a top-level nav item. */
+export type NavDot = 'blue' | 'pink' | 'ring' | 'white';
+
 export interface NavItem {
   label: string;
   href: string;
   children?: NavChild[];
+  dot?: NavDot;
 }
 
 export interface ServiceSummary {

@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/utils/cn';
 import type { NavItem } from '@/types';
+import { NavDotIndicator } from './NavDotIndicator';
 
 interface DesktopNavDropdownProps {
   item: NavItem;
@@ -29,10 +30,11 @@ export function DesktopNavDropdown({ item, isScrolledStyle }: DesktopNavDropdown
       <Link
         to={item.href}
         className={cn(
-          'font-display text-sm font-semibold transition-colors',
+          'flex items-center gap-1.5 font-display text-sm font-semibold transition-colors',
           isActive ? 'text-brand-500' : isScrolledStyle ? 'text-ink-700 hover:text-brand-500' : 'text-white hover:text-brand-200'
         )}
       >
+        {item.dot && <NavDotIndicator dot={item.dot} />}
         {item.label}
       </Link>
     );
@@ -43,11 +45,12 @@ export function DesktopNavDropdown({ item, isScrolledStyle }: DesktopNavDropdown
       <Link
         to={item.href}
         className={cn(
-          'flex items-center gap-1 font-display text-sm font-semibold transition-colors',
+          'flex items-center gap-1.5 font-display text-sm font-semibold transition-colors',
           isActive ? 'text-brand-500' : isScrolledStyle ? 'text-ink-700 hover:text-brand-500' : 'text-white hover:text-brand-200'
         )}
         aria-expanded={open}
       >
+        {item.dot && <NavDotIndicator dot={item.dot} />}
         {item.label}
         <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', open && 'rotate-180')} aria-hidden="true" />
       </Link>

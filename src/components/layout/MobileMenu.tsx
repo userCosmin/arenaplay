@@ -6,6 +6,7 @@ import { cn } from '@/utils/cn';
 import { mainNavigation } from '@/data/navigation';
 import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';
 import { Logo } from './Logo';
+import { NavDotIndicator } from './NavDotIndicator';
 import { Button } from '@/components/ui/Button';
 import { siteConfig, telUrl, whatsappUrl } from '@/config/site.config';
 import { useBookingModal } from '@/context/BookingModalContext';
@@ -62,8 +63,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       <Link
                         to={item.href}
                         onClick={onClose}
-                        className={cn('py-3 font-display text-base font-semibold', isActive ? 'text-brand-500' : 'text-ink-900')}
+                        className={cn('flex items-center gap-2 py-3 font-display text-base font-semibold', isActive ? 'text-brand-500' : 'text-ink-900')}
                       >
+                        {item.dot && <NavDotIndicator dot={item.dot} />}
                         {item.label}
                       </Link>
                       {item.children && (
