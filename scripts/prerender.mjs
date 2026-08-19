@@ -143,7 +143,7 @@ const routes = [
     description: 'Distracție, experiențe și educație într-un singur loc: petreceri pentru copii, loc de joacă cu XR/VR, afterschool și Arena VR mobilă adusă la tine.',
     jsonLd: [localBusinessSchema(), faqSchema(generalFaq)],
     body: `
-      <h1>DISTRACȚIE. EXPERIENȚE. EDUCAȚIE.</h1>
+      <h1>JOACĂ. DISTRACȚIE. EDUCAȚIE.</h1>
       <p>Petreceri • Loc de joacă • Afterschool • Arena VR mobilă</p>
       <p>Arena Play este locul unde distracția întâlnește educația: petreceri pentru copii, loc de joacă cu tehnologie XR/VR, afterschool și Arena VR mobilă — experiența Arena Play adusă la tine.</p>
       ${section('Alege experiența Arena Play', linkList([

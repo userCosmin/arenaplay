@@ -25,7 +25,7 @@ export function Hero() {
             Locul unde joaca devine învățare
           </span>
           <h1 className="text-balance font-display text-display-xl font-extrabold text-white">
-            DISTRACȚIE. EXPERIENȚE. EDUCAȚIE.
+            JOACĂ. DISTRACȚIE. EDUCAȚIE.
           </h1>
           <p className="mt-6 font-heading text-balance text-lg sm:text-xl font-medium text-white/85">
             Petreceri <span aria-hidden="true">•</span> Loc de joacă <span aria-hidden="true">•</span> Afterschool{' '}
