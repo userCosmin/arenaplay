@@ -8,10 +8,10 @@ import { cn } from '@/utils/cn';
 const iconMap = { PartyPopper, Gamepad2, GraduationCap, Truck };
 
 const cardGradients: Record<string, string> = {
-  petreceri: 'from-petreceri/10 to-petreceri/5',
-  playground: 'from-playground/10 to-playground/5',
-  afterschool: 'from-afterschool/10 to-afterschool/5',
-  arenamobila: 'from-arenamobila/10 to-arenamobila/5',
+  petreceri: 'from-petreceri/25 via-petreceri/10 to-white',
+  playground: 'from-playground/25 via-playground/10 to-white',
+  afterschool: 'from-afterschool/25 via-afterschool/10 to-white',
+  arenamobila: 'from-arenamobila/25 via-arenamobila/10 to-white',
 };
 
 const iconColors: Record<string, string> = {
