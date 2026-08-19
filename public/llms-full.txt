@@ -15,7 +15,7 @@ brand, each with a distinct visual accent but shared identity:
 
 ## Page: Acasă (/)
 Homepage routes visitors to one of four services immediately below the hero. Sections, in order:
-Hero ("JOACĂ. DISTRACȚIE. EDUCAȚIE." — "Petreceri • Loc de joacă • Afterschool • Arena VR mobilă"),
+Hero ("JOACĂ. DISTRACȚIE. EDUCAȚIE." — "Loc de joacă • Petreceri VR • Arena VR mobilă • Afterschool"),
 four service cards, "Ce cauți?" need-oriented repeat of the four routes, testimonials carousel,
 photo gallery, location + opening hours + Google Maps embed, FAQ accordion, and a final section
 with four distinct CTAs (one per service).
